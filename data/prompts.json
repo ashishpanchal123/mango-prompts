@@ -1,0 +1,222 @@
+[
+  {
+    "id": "mj-cinematic-portrait",
+    "slug": "mj-cinematic-portrait",
+    "title": "Cinematic Portrait Photography",
+    "description": "Stunning cinematic portrait with professional lighting and mood.",
+    "category": "Midjourney",
+    "type": "visual",
+    "prompt": "Cinematic portrait of [describe subject: age, gender, appearance], shot on 85mm lens, golden hour lighting, shallow depth of field, film grain texture, muted warm tones, professional photography, editorial style, high contrast shadows, bokeh background of [describe background scene], photorealistic, ultra detailed skin texture, natural expression, [specify mood: contemplative/confident/mysterious], ARRI Alexa cinematography look, movie still quality --ar 2:3 --style raw --stylize 750. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-mj-01/800/1000",
+    "trending": true
+  },
+  {
+    "id": "mj-fantasy-landscape",
+    "slug": "mj-fantasy-landscape",
+    "title": "Epic Fantasy Landscape",
+    "description": "Breathtaking fantasy world environments with incredible detail.",
+    "category": "Midjourney",
+    "type": "visual",
+    "prompt": "Epic fantasy landscape, [describe scene: ancient forest/floating islands/dragon mountain/crystal caves], dramatic lighting with god rays piercing through clouds, volumetric fog in valleys, ancient ruins covered in glowing moss, massive scale with tiny adventurer for scale, ultra detailed environment art, concept art style, trending on ArtStation, painterly realism, rich color palette of deep purples and golden light, atmospheric depth, 8K resolution quality, hyperdetailed foliage and terrain textures, cinematic wide angle composition --ar 21:9 --stylize 1000 --style raw. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-mj-02/800/1000",
+    "trending": false
+  },
+  {
+    "id": "flux-realistic-person",
+    "slug": "flux-realistic-person",
+    "title": "Photorealistic Person Portrait",
+    "description": "Incredibly realistic human portraits that look like actual photographs.",
+    "category": "Flux",
+    "type": "visual",
+    "prompt": "Photorealistic portrait photograph of [describe person: age, gender, ethnicity, appearance], natural skin texture with visible pores and subtle imperfections, [describe lighting: soft studio light/harsh sun/golden hour/overcast diffused], shot on a professional mirrorless camera with 85mm f/1.4 lens, shallow depth of field, [describe expression and emotion], [describe background and environment], hyperrealistic photography, not an illustration, authentic documentary photography quality, natural color grading, film-like quality with slight grain, candid authentic moment captured --ar 2:3 --steps 40. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-fx-01/800/1000",
+    "trending": true
+  },
+  {
+    "id": "flux-concept-art",
+    "slug": "flux-concept-art",
+    "title": "Sci-Fi Concept Art",
+    "description": "Detailed sci-fi concept art for games, films, and creative projects.",
+    "category": "Flux",
+    "type": "visual",
+    "prompt": "Sci-fi concept art, [describe subject: space station/alien planet/cyberpunk city/military vehicle/alien creature], [art style: hard sci-fi realism/stylized/painterly], detailed environment with [describe key visual elements], dramatic lighting with [describe light source: star light/neon signs/reactor glow/bioluminescence], [describe color palette], cinematic composition, concept artist portfolio piece, [mood: epic/ominous/hopeful/desolate], ultra detailed, 8K quality digital painting --ar 16:9. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-fx-02/800/1000",
+    "trending": false
+  },
+  {
+    "id": "veo-product-commercial",
+    "slug": "veo-product-commercial",
+    "title": "Product Commercial Video",
+    "description": "Generate a cinematic product commercial video prompt for any brand.",
+    "category": "Veo",
+    "type": "visual",
+    "prompt": "Cinematic product commercial video, [describe product] hero shot opening on pure [color] background, camera slowly orbits product revealing all angles, subtle particle effects [describe: light flares/water drops/dust motes] float around product, macro close-up shots revealing premium material texture, [describe product color and finish], dramatic key light from 45 degrees creating luxury shadows, product logo reveal at end on black background, [brand aesthetic: minimalist/dynamic/luxury], 30-second commercial pacing, 4K ultra HD quality, no people in frame, pure product showcase, cinematic color grading with [describe grade: teal and orange/desaturated/warm tones]. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-veo-01/800/1000",
+    "trending": true
+  },
+  {
+    "id": "veo-nature-documentary",
+    "slug": "veo-nature-documentary",
+    "title": "Nature Documentary Scene",
+    "description": "Breathtaking nature documentary style video scenes.",
+    "category": "Veo",
+    "type": "visual",
+    "prompt": "Nature documentary style video scene, [describe animal] in [describe natural habitat], [describe behavior: stalking prey/feeding young/migrating/territorial display], 4K ultra high definition with exceptional clarity, shot with cinema-quality telephoto lens creating compressed perspective, [describe time of day and lighting], slow motion for key action moments, documentary authenticity with no visible camera, [describe sound design: ambient wildlife sounds/orchestral score building], color graded with natural but enhanced tones, premium nature documentary cinematic quality. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "image": "https://picsum.photos/seed/mango-veo-02/800/1000",
+    "trending": false
+  },
+  {
+    "id": "chatgpt-email-writer",
+    "slug": "chatgpt-email-writer",
+    "title": "Professional Email Writer",
+    "description": "Write any professional email in seconds with perfect tone and structure.",
+    "category": "ChatGPT",
+    "type": "text",
+    "prompt": "You are an expert business communication specialist. Write a professional email based on the following details:\n\nContext: [describe the situation]\nRecipient: [who are you emailing]\nPurpose: [what do you want to achieve]\nTone: [formal/semi-formal/friendly]\nKey points to cover: [list your main points]\n\nRequirements:\n- Subject line that gets opened\n- Clear, concise body paragraphs\n- Strong call to action\n- Professional closing\n- Keep it under 200 words unless the context requires more\n\nWrite the complete email now.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "chatgpt-blog-post",
+    "slug": "chatgpt-blog-post",
+    "title": "SEO Blog Post Generator",
+    "description": "Generate a complete, SEO-optimized blog post on any topic.",
+    "category": "ChatGPT",
+    "type": "text",
+    "prompt": "Act as an expert content writer and SEO specialist. Write a comprehensive blog post on: [topic]\n\nTarget keyword: [primary keyword]\nSecondary keywords: [list 3-5 related keywords]\nTarget audience: [describe your reader]\nWord count: [desired length]\nTone: [informative/conversational/authoritative]\n\nStructure the post with:\n1. Attention-grabbing H1 title (include primary keyword)\n2. Compelling introduction with a hook\n3. Well-organized body with H2 and H3 subheadings\n4. Actionable tips or insights in each section\n5. Real examples or statistics where relevant\n6. Strong conclusion with a clear takeaway\n7. SEO meta description (150-160 characters)\n\nEnsure natural keyword placement, short paragraphs for readability, and a writing style that keeps readers engaged from start to finish.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "claude-prompt-optimizer",
+    "slug": "claude-prompt-optimizer",
+    "title": "AI Prompt Optimizer",
+    "description": "Transform weak prompts into powerful, precise instructions that get perfect results.",
+    "category": "Claude",
+    "type": "text",
+    "prompt": "You are a world-class prompt engineer who designs prompts used by Fortune 500 companies. Analyze and completely rewrite the following prompt to make it dramatically more effective:\n\nOriginal prompt: [paste your current prompt here]\nAI model target: [Claude/ChatGPT/Gemini]\nDesired output type: [what you want the AI to produce]\nUse case: [how you will use the output]\nCurrent problems with the output: [what is wrong with what you are getting now]\n\nRewrite the prompt with:\n1. Clear role assignment for the AI\n2. Precise context and background information\n3. Specific output format requirements\n4. Examples of desired tone and style\n5. Constraints and boundaries\n6. Quality criteria the output must meet\n7. Step-by-step reasoning instructions if needed\n\nThen explain what changes you made, why they help, and provide both a full and a quick version of the optimized prompt.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "claude-essay-writer",
+    "slug": "claude-essay-writer",
+    "title": "Academic Essay Writer",
+    "description": "Write well-structured, research-backed academic essays on any subject.",
+    "category": "Claude",
+    "type": "text",
+    "prompt": "You are a distinguished academic writer with expertise across multiple disciplines. Write a comprehensive essay on:\n\nTopic: [your essay topic]\nAcademic level: [high school/undergraduate/graduate/PhD]\nWord count: [required length]\nCitation style: [APA/MLA/Chicago/Harvard]\nSubject area: [discipline or course]\nArgument or thesis direction: [the position you want to argue, or leave blank for balanced analysis]\n\nEssay structure:\n1. Introduction with a compelling hook and clear thesis statement\n2. Literature review or background context\n3. Well-developed body paragraphs with topic sentences, evidence, and analysis\n4. Counterargument and rebuttal section\n5. Synthesis and discussion of implications\n6. Conclusion that reinforces thesis and provides forward-looking perspective\n7. References list formatted correctly\n\nEnsure academic language, logical flow, critical thinking, and proper citation integration throughout.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "marketing-email-campaign",
+    "slug": "marketing-email-campaign",
+    "title": "Email Marketing Campaign",
+    "description": "Write a complete email marketing campaign sequence that converts subscribers.",
+    "category": "Marketing",
+    "type": "text",
+    "prompt": "You are a direct response email marketing expert. Create a complete email marketing campaign for:\n\nProduct or service: [what you are selling]\nPrice point: [cost]\nTarget audience: [describe ideal customer]\nCampaign goal: [launch/nurture/win-back/promotion]\nNumber of emails: [3/5/7/10 email sequence]\nSending schedule: [daily/every other day/weekly]\n\nFor each email provide subject line (plus 2 A/B variations), preview text, opening hook, body copy, call to action, and P.S. line.\n\nSequence structure: Welcome, value-driven story, address objection, social proof, urgency and final offer.\n\nWrite in a conversational, human tone. No corporate speak.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "marketing-brand-voice",
+    "slug": "marketing-brand-voice",
+    "title": "Brand Voice and Tone Guide",
+    "description": "Define your brand's unique voice, tone, and messaging framework.",
+    "category": "Marketing",
+    "type": "text",
+    "prompt": "You are a senior brand strategist. Develop a comprehensive brand voice and tone guide for:\n\nBrand name: [company name]\nIndustry: [market sector]\nMission: [what you stand for]\nCore values: [list 3-5 values]\nTarget audience: [who you serve]\nBrand personality words: [3-5 adjectives]\n\nDeliver: brand personality archetype with rationale, voice characteristics, tone variations for different contexts, vocabulary guide (words we use vs avoid), writing principles with before/after examples, dos and don'ts, sample copy across 5 formats, and guidance for external writers.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "resume-ats-optimizer",
+    "slug": "resume-ats-optimizer",
+    "title": "ATS Resume Optimizer",
+    "description": "Optimize your resume to pass Applicant Tracking Systems and get more interviews.",
+    "category": "Resume",
+    "type": "text",
+    "prompt": "You are a professional resume writer and ATS specialist. Optimize my resume for ATS systems:\n\nCurrent resume: [paste your current resume]\nTarget job posting: [paste the full job description]\nTarget company: [company name]\nTarget role: [exact job title]\nYears of experience: [number]\nTop skills to highlight: [list your strongest relevant skills]\n\nProvide an ATS score analysis, missing keywords, an optimized resume rewrite with achievement-based bullets in CAR format, an optimized skills section, a targeted summary statement, red flags to fix, and formatting rules. Target minimum 80% keyword match to the job description.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "resume-linkedin-profile",
+    "slug": "resume-linkedin-profile",
+    "title": "LinkedIn Profile Optimizer",
+    "description": "Transform your LinkedIn profile into a magnet for recruiters and opportunities.",
+    "category": "Resume",
+    "type": "text",
+    "prompt": "You are a LinkedIn optimization expert. Completely optimize my LinkedIn profile:\n\nCurrent headline: [your current headline]\nCurrent about section: [paste current about]\nCurrent experience descriptions: [paste 2-3 recent roles]\nIndustry: [your field]\nCareer goal: [what roles or opportunities you want]\nTop 5 skills: [your strongest skills]\nKey achievement: [your proudest professional accomplishment]\n\nRewrite the headline (220 char max), about section (2600 char max storytelling structure), experience descriptions with quantified results, top 50 skills to add, featured section ideas, and engagement tips for algorithm visibility.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "uxdesign-user-research",
+    "slug": "uxdesign-user-research",
+    "title": "User Research Interview Guide",
+    "description": "Design a comprehensive user research interview to uncover real user needs.",
+    "category": "UX Design",
+    "type": "text",
+    "prompt": "You are a senior UX researcher. Design a complete user research study for:\n\nProduct or feature: [describe what you are researching]\nResearch goal: [what decision does this research inform]\nUser type: [who are the participants]\nResearch phase: [discovery/usability/validation]\nKey assumptions to test: [hypotheses you want to validate or invalidate]\n\nDeliver a research plan, a recruitment screener (8-10 questions), a complete discussion guide (warm-up, context, core deep-dive, task-based exploration, wrap-up), an observation framework, an analysis template, and a report template. All questions open-ended, no leading questions.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "uxdesign-wireframe-brief",
+    "slug": "uxdesign-wireframe-brief",
+    "title": "Wireframe and Prototype Brief",
+    "description": "Create a detailed wireframe brief that aligns design and development teams.",
+    "category": "UX Design",
+    "type": "text",
+    "prompt": "You are a senior UX designer. Write a comprehensive wireframe brief for:\n\nProduct: [app/website/feature]\nPlatform: [web/iOS/Android/responsive]\nUser story: [as a [user], I want to [action] so that [benefit]]\nScope: [which screens or flows]\nBusiness objective: [what metric this improves]\n\nProvide a flow diagram, screen-by-screen breakdown (purpose, elements, content hierarchy, interactive behavior, states), navigation patterns, a component inventory, accessibility notes, edge cases, and design decision rationale.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "coding-code-debugger",
+    "slug": "coding-code-debugger",
+    "title": "Expert Code Debugger",
+    "description": "Diagnose and fix any coding bug with systematic debugging methodology.",
+    "category": "Coding",
+    "type": "text",
+    "prompt": "You are a senior software engineer with deep expertise in debugging complex systems. Debug the following issue:\n\nCode with bug: [paste your code]\nLanguage and version: [e.g. Python 3.11, Node.js 20]\nFramework: [if applicable]\nError message: [exact error output]\nExpected behavior: [what should happen]\nActual behavior: [what is happening instead]\nWhat I have already tried: [debugging steps attempted]\n\nProvide a root cause analysis, step-by-step explanation of what's wrong, fixed code with comments, why the fix works, edge cases to test, and prevention tips for this class of bug.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "coding-api-design",
+    "slug": "coding-api-design",
+    "title": "REST API Design and Documentation",
+    "description": "Design a clean, well-documented REST API following industry best practices.",
+    "category": "Coding",
+    "type": "text",
+    "prompt": "You are a backend architect who designs APIs used by millions of developers. Design a complete REST API for:\n\nApplication: [describe your application]\nCore resources: [main entities, e.g. users, products, orders]\nAuthentication method: [JWT/OAuth2/API key]\nDatabase: [PostgreSQL/MongoDB/MySQL/etc]\nLanguage/framework: [Node.js Express/Python FastAPI/Go/etc]\n\nDesign the resource structure, endpoint documentation per resource (method, URL, request/response schema, status codes, rate limiting), authentication flow, error response standard, pagination design, filtering/sorting conventions, an OpenAPI 3.0 spec outline, and security considerations.",
+    "image": null,
+    "trending": false
+  },
+  {
+    "id": "business-investor-pitch",
+    "slug": "business-investor-pitch",
+    "title": "Investor Pitch Deck Creator",
+    "description": "Build a compelling investor pitch deck that gets meetings with top VCs.",
+    "category": "Business",
+    "type": "text",
+    "prompt": "You are a startup advisor who has helped companies raise from top-tier VCs. Create a compelling investor pitch deck for:\n\nCompany: [name and one-line description]\nStage: [pre-seed/seed/Series A]\nFunding ask: [amount raising]\nProduct: [what you build]\nMarket: [who buys it]\nTraction: [any revenue, users, growth]\nTeam: [founder backgrounds]\n\nCreate a complete 12-slide deck structure: cover, problem, solution, market size (TAM/SAM/SOM), product, business model, traction, go-to-market, competition, team, financials, and the ask. For each slide give the headline, key content, and data to include.",
+    "image": null,
+    "trending": true
+  },
+  {
+    "id": "business-operations-sop",
+    "slug": "business-operations-sop",
+    "title": "Standard Operating Procedure Writer",
+    "description": "Create clear, comprehensive SOPs that any team member can follow.",
+    "category": "Business",
+    "type": "text",
+    "prompt": "You are an operations specialist who has built SOPs for scaling companies. Write a complete Standard Operating Procedure for:\n\nProcess name: [name of the process]\nDepartment: [which team owns this]\nFrequency: [how often this is done]\nTrigger: [what starts this process]\nPeople involved: [roles that participate]\nSystems used: [tools, software, platforms]\n\nCreate the header section, process overview, a RACI roles matrix, numbered step-by-step instructions with decision points and time estimates, quality checks, a troubleshooting guide, and a glossary.",
+    "image": null,
+    "trending": false
+  }
+]
