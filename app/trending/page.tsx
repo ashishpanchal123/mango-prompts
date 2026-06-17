@@ -24,7 +24,7 @@ export default function TrendingPage() {
       {visual.length > 0 && (
         <section className="mb-12">
           <h2 className="text-lg font-semibold mb-5">Trending Visuals</h2>
-          <div className="masonry">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {visual.map((p) => (
               <VisualPromptCard key={p.slug} prompt={p} />
             ))}

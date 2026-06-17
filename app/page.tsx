@@ -6,7 +6,7 @@ import TextPromptCard from "@/components/TextPromptCard";
 import { getVisualPrompts, getTextPrompts } from "@/lib/prompts";
 
 export default function HomePage() {
-  const visualPrompts = getVisualPrompts().slice(0, 6);
+  const visualPrompts = getVisualPrompts().slice(0, 8);
   const textPrompts = getTextPrompts().slice(0, 6);
 
   return (
@@ -31,7 +31,7 @@ export default function HomePage() {
             View all
           </Link>
         </div>
-        <div className="masonry">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {visualPrompts.map((p) => (
             <VisualPromptCard key={p.slug} prompt={p} />
           ))}

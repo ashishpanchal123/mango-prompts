@@ -65,7 +65,7 @@ export default async function PromptDetailPage({
       {prompt.image && (
         <div className="relative w-full aspect-[4/5] sm:aspect-[16/9] rounded-xl overflow-hidden border border-[var(--border)] mb-8">
           <Image
-            src={prompt.image.replace("/800/1000", "/1200/1500")}
+            src={prompt.image}
             alt={prompt.title}
             fill
             sizes="(max-width: 768px) 100vw, 800px"
@@ -102,7 +102,7 @@ export default async function PromptDetailPage({
         <section className="mt-16">
           <h2 className="text-xl font-semibold mb-6">Related Prompts</h2>
           {prompt.type === "visual" ? (
-            <div className="masonry">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {related.map((p) => (
                 <VisualPromptCard key={p.slug} prompt={p} />
               ))}
