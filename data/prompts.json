@@ -8,7 +8,9 @@
     "type": "visual",
     "prompt": "Cinematic portrait of [describe subject: age, gender, appearance], shot on 85mm lens, golden hour lighting, shallow depth of field, film grain texture, muted warm tones, professional photography, editorial style, high contrast shadows, bokeh background of [describe background scene], photorealistic, ultra detailed skin texture, natural expression, [specify mood: contemplative/confident/mysterious], ARRI Alexa cinematography look, movie still quality --ar 2:3 --style raw --stylize 750. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-mj-01/800/1000",
-    "trending": true
+    "trending": true,
+    "creator": "@tariqHasanSyed",
+    "likes": "1.9k"
   },
   {
     "id": "mj-fantasy-landscape",
@@ -19,7 +21,9 @@
     "type": "visual",
     "prompt": "Epic fantasy landscape, [describe scene: ancient forest/floating islands/dragon mountain/crystal caves], dramatic lighting with god rays piercing through clouds, volumetric fog in valleys, ancient ruins covered in glowing moss, massive scale with tiny adventurer for scale, ultra detailed environment art, concept art style, trending on ArtStation, painterly realism, rich color palette of deep purples and golden light, atmospheric depth, 8K resolution quality, hyperdetailed foliage and terrain textures, cinematic wide angle composition --ar 21:9 --stylize 1000 --style raw. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-mj-02/800/1000",
-    "trending": false
+    "trending": false,
+    "creator": "@elenaDrake",
+    "likes": "1.4k"
   },
   {
     "id": "flux-realistic-person",
@@ -30,7 +34,9 @@
     "type": "visual",
     "prompt": "Photorealistic portrait photograph of [describe person: age, gender, ethnicity, appearance], natural skin texture with visible pores and subtle imperfections, [describe lighting: soft studio light/harsh sun/golden hour/overcast diffused], shot on a professional mirrorless camera with 85mm f/1.4 lens, shallow depth of field, [describe expression and emotion], [describe background and environment], hyperrealistic photography, not an illustration, authentic documentary photography quality, natural color grading, film-like quality with slight grain, candid authentic moment captured --ar 2:3 --steps 40. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-fx-01/800/1000",
-    "trending": true
+    "trending": true,
+    "creator": "@edferreirajr",
+    "likes": "1.1k"
   },
   {
     "id": "flux-concept-art",
@@ -41,7 +47,9 @@
     "type": "visual",
     "prompt": "Sci-fi concept art, [describe subject: space station/alien planet/cyberpunk city/military vehicle/alien creature], [art style: hard sci-fi realism/stylized/painterly], detailed environment with [describe key visual elements], dramatic lighting with [describe light source: star light/neon signs/reactor glow/bioluminescence], [describe color palette], cinematic composition, concept artist portfolio piece, [mood: epic/ominous/hopeful/desolate], ultra detailed, 8K quality digital painting --ar 16:9. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-fx-02/800/1000",
-    "trending": false
+    "trending": false,
+    "creator": "@ravi.codes",
+    "likes": "1.0k"
   },
   {
     "id": "veo-product-commercial",
@@ -52,7 +60,9 @@
     "type": "visual",
     "prompt": "Cinematic product commercial video, [describe product] hero shot opening on pure [color] background, camera slowly orbits product revealing all angles, subtle particle effects [describe: light flares/water drops/dust motes] float around product, macro close-up shots revealing premium material texture, [describe product color and finish], dramatic key light from 45 degrees creating luxury shadows, product logo reveal at end on black background, [brand aesthetic: minimalist/dynamic/luxury], 30-second commercial pacing, 4K ultra HD quality, no people in frame, pure product showcase, cinematic color grading with [describe grade: teal and orange/desaturated/warm tones]. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-veo-01/800/1000",
-    "trending": true
+    "trending": true,
+    "creator": "@studio_north",
+    "likes": "915"
   },
   {
     "id": "veo-nature-documentary",
@@ -63,7 +73,9 @@
     "type": "visual",
     "prompt": "Nature documentary style video scene, [describe animal] in [describe natural habitat], [describe behavior: stalking prey/feeding young/migrating/territorial display], 4K ultra high definition with exceptional clarity, shot with cinema-quality telephoto lens creating compressed perspective, [describe time of day and lighting], slow motion for key action moments, documentary authenticity with no visible camera, [describe sound design: ambient wildlife sounds/orchestral score building], color graded with natural but enhanced tones, premium nature documentary cinematic quality. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "https://picsum.photos/seed/mango-veo-02/800/1000",
-    "trending": false
+    "trending": false,
+    "creator": "@wildframe",
+    "likes": "841"
   },
   {
     "id": "chatgpt-email-writer",

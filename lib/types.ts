@@ -22,6 +22,8 @@ export interface Prompt {
   prompt: string;
   image: string | null;
   trending: boolean;
+  creator?: string;
+  likes?: string;
 }
 
 export const VISUAL_CATEGORIES: PromptCategory[] = ["Midjourney", "Flux", "Veo"];
