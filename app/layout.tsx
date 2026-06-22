@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -21,14 +21,21 @@ const beVietnamPro = localFont({
 
 const SITE_URL = "https://mangoprompts.vercel.app";
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mango Prompts - Fresh AI Prompts for ChatGPT, Claude, Midjourney & More",
+    default: "Mango Prompts | AI Prompt Library",
     template: "%s | Mango Prompts",
   },
   description:
-    "Discover, copy, and use the best AI prompts for ChatGPT, Claude, Midjourney, Flux, Veo, marketing, resumes, UX design, coding, and business. Fresh AI prompts. Copy. Paste. Create.",
+    "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
   keywords: [
     "AI prompts",
     "ChatGPT prompts",
@@ -46,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Mango Prompts",
-    title: "Mango Prompts - Fresh AI Prompts for ChatGPT, Claude, Midjourney & More",
+    title: "Mango Prompts | AI Prompt Library",
     description:
-      "Discover, copy, and use the best AI prompts for ChatGPT, Claude, Midjourney, Flux, Veo, marketing, resumes, UX design, coding, and business.",
+      "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mango Prompts - Fresh AI Prompts for ChatGPT, Claude, Midjourney & More",
+    title: "Mango Prompts | AI Prompt Library",
     description:
-      "Discover, copy, and use the best AI prompts for ChatGPT, Claude, Midjourney, Flux, Veo, marketing, resumes, UX design, coding, and business.",
+      "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
   },
   robots: {
     index: true,
@@ -71,6 +78,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${playfairDisplay.variable} ${beVietnamPro.variable} h-full`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

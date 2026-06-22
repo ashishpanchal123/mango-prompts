@@ -102,13 +102,13 @@ export default async function PromptDetailPage({
         <section className="mt-16">
           <h2 className="text-xl font-semibold mb-6">Related Prompts</h2>
           {prompt.type === "visual" ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-5">
               {related.map((p) => (
                 <VisualPromptCard key={p.slug} prompt={p} />
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 min-[540px]:grid-cols-2 gap-4">
               {related.map((p) => (
                 <TextPromptCard key={p.slug} prompt={p} />
               ))}

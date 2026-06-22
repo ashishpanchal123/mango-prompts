@@ -24,7 +24,7 @@ export default function TrendingPage() {
       {visual.length > 0 && (
         <section className="mb-12">
           <h2 className="text-lg font-semibold mb-5">Trending Visuals</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {visual.map((p) => (
               <VisualPromptCard key={p.slug} prompt={p} />
             ))}
@@ -35,7 +35,7 @@ export default function TrendingPage() {
       {text.length > 0 && (
         <section>
           <h2 className="text-lg font-semibold mb-5">Trending Text Prompts</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 min-[540px]:grid-cols-2 md:grid-cols-3 gap-4">
             {text.map((p) => (
               <TextPromptCard key={p.slug} prompt={p} />
             ))}

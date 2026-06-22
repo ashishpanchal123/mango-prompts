@@ -52,11 +52,38 @@ export default function SearchBar({
         onFocus={() => setOpen(true)}
         placeholder={placeholder}
         className={`w-full rounded-md border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:border-[var(--mango)] outline-none transition-colors ${
-          large ? "px-6 py-4 text-base" : "px-4 py-2 text-sm"
+          large ? "pl-6 pr-12 py-4 text-base" : "pl-4 pr-10 py-2 text-sm"
         }`}
       />
+      {query && (
+        <button
+          type="button"
+          onClick={() => {
+            setQuery("");
+            setOpen(false);
+          }}
+          className={`absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors ${
+            large ? "right-4" : "right-3"
+          }`}
+          aria-label="Clear search"
+        >
+          <svg
+            className={large ? "w-5 h-5" : "w-4 h-4"}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      )}
       {open && query.trim() && (
-        <div className="absolute z-50 mt-2 w-full max-h-96 overflow-y-auto scrollbar-thin rounded-md border border-[var(--border)] bg-[var(--bg-elevated)] shadow-2xl">
+        <div className="absolute z-50 mt-2 right-0 w-[calc(100vw-2rem)] max-w-[350px] sm:w-full sm:max-w-none max-h-96 overflow-y-auto scrollbar-thin rounded-md border border-[var(--border)] bg-[var(--bg-elevated)] shadow-2xl">
           {results.length === 0 ? (
             <p className="px-4 py-4 text-sm text-[var(--text-muted)]">
               No prompts found for &ldquo;{query}&rdquo;

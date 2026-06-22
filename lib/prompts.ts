@@ -8,7 +8,7 @@ export function getAllPrompts(): Prompt[] {
 }
 
 export function getPromptBySlug(slug: string): Prompt | undefined {
-  return prompts.find((p) => p.slug === slug);
+  return prompts.find((p) => p.slug.toLowerCase() === slug.toLowerCase());
 }
 
 export function getPromptsByCategory(category: PromptCategory): Prompt[] {

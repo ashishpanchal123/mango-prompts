@@ -8,7 +8,7 @@ import { getPromptsByCategory } from "@/lib/prompts";
 
 function slugToCategory(slug: string): PromptCategory | undefined {
   return ALL_CATEGORIES.find(
-    (c) => c.toLowerCase().replace(/\s+/g, "-") === slug
+    (c) => c.toLowerCase().replace(/\s+/g, "-") === slug.toLowerCase()
   );
 }
 
@@ -54,13 +54,13 @@ export default async function CategoryPage({
         {prompts.length} prompts in this category.
       </p>
       {isVisual ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {prompts.map((p) => (
             <VisualPromptCard key={p.slug} prompt={p} />
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 min-[540px]:grid-cols-2 md:grid-cols-3 gap-4">
           {prompts.map((p) => (
             <TextPromptCard key={p.slug} prompt={p} />
           ))}
