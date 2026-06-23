@@ -18,9 +18,6 @@ export default async function HomePage({
   if (isPremiumFilter) {
     visualPrompts = visualPrompts.filter((p) => p.isPremium);
     textPrompts = textPrompts.filter((p) => p.isPremium);
-  } else {
-    visualPrompts = visualPrompts.slice(0, 8);
-    textPrompts = textPrompts.slice(0, 6);
   }
 
   return (
@@ -61,9 +58,6 @@ export default async function HomePage({
           <h2 className="text-2xl font-semibold">
             {isPremiumFilter ? "Premium Visuals" : "Featured Visuals"}
           </h2>
-          <Link href="/trending" className="text-sm text-[var(--mango-soft)] hover:underline">
-            View trending
-          </Link>
         </div>
         <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {visualPrompts.map((p) => (
