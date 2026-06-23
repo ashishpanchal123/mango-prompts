@@ -4,9 +4,24 @@ import VisualPromptCard from "@/components/VisualPromptCard";
 import TextPromptCard from "@/components/TextPromptCard";
 import { getVisualPrompts, getTextPrompts } from "@/lib/prompts";
 
-export default function HomePage() {
-  const visualPrompts = getVisualPrompts().slice(0, 8);
-  const textPrompts = getTextPrompts().slice(0, 6);
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ filter?: string }>;
+}) {
+  const { filter } = await searchParams;
+  const isPremiumFilter = filter === "premium";
+
+  let visualPrompts = getVisualPrompts();
+  let textPrompts = getTextPrompts();
+
+  if (isPremiumFilter) {
+    visualPrompts = visualPrompts.filter((p) => p.isPremium);
+    textPrompts = textPrompts.filter((p) => p.isPremium);
+  } else {
+    visualPrompts = visualPrompts.slice(0, 8);
+    textPrompts = textPrompts.slice(0, 6);
+  }
 
   return (
     <div>
@@ -22,7 +37,7 @@ export default function HomePage() {
           <Link href="#free-prompts" className="px-6 py-3 bg-[var(--mango)] text-black font-semibold rounded-full hover:bg-[var(--mango-soft)] transition-colors">
             Browse Free Prompts
           </Link>
-          <Link href="#premium" className="px-6 py-3 border border-[var(--border)] text-[var(--text)] font-semibold rounded-full hover:border-[var(--text-muted)] transition-colors">
+          <Link href="/premium" className="px-6 py-3 border border-[var(--border)] text-[var(--text)] font-semibold rounded-full hover:border-[var(--text-muted)] transition-colors">
             Explore Premium
           </Link>
         </div>
@@ -39,36 +54,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PREMIUM SECTION */}
-      <section id="premium" className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
-        <div className="flex items-baseline justify-between mb-6">
-          <h2 className="text-2xl font-semibold">Premium Packs</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { title: "AI Video Creator Pack", desc: "50 Advanced Veo Prompts" },
-            { title: "Luxury Fashion Marketing Pack", desc: "50 Fashion Prompts" },
-            { title: "Personal Branding Pack", desc: "50 Creator Prompts" }
-          ].map((pack) => (
-            <div key={pack.title} className="group relative border border-[var(--border)] rounded-2xl p-6 bg-[var(--bg)] hover:border-[var(--text-muted)] transition-colors">
-              <div className="flex justify-between items-start mb-4">
-                <span className="text-xs font-semibold px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded-md tracking-wide">PREMIUM</span>
-                <span className="font-semibold text-lg">₹99</span>
-              </div>
-              <h3 className="font-semibold text-lg mb-1">{pack.title}</h3>
-              <p className="text-sm text-[var(--text-secondary)] mb-6">{pack.desc}</p>
-              <a href="https://rzp.io" target="_blank" rel="noopener noreferrer" className="block w-full text-center px-4 py-2 bg-[var(--text)] text-[var(--bg)] font-medium rounded-xl hover:opacity-90 transition-opacity">
-                Unlock Button
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* FREE PROMPTS SECTION */}
       <section id="free-prompts" className="mx-auto max-w-7xl px-4 sm:px-6 py-12 border-t border-[var(--border)]">
         <div className="flex items-baseline justify-between mb-6">
-          <h2 className="text-2xl font-semibold">Featured Visuals</h2>
+          <h2 className="text-2xl font-semibold">
+            {isPremiumFilter ? "Premium Visuals" : "Featured Visuals"}
+          </h2>
           <Link href="/trending" className="text-sm text-[var(--mango-soft)] hover:underline">
             View trending
           </Link>
@@ -82,10 +74,9 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-12 border-t border-[var(--border)]">
         <div className="flex items-baseline justify-between mb-6">
-          <h2 className="text-2xl font-semibold">Featured Workflows</h2>
-          <Link href="/categories" className="text-sm text-[var(--mango-soft)] hover:underline">
-            Browse categories
-          </Link>
+          <h2 className="text-2xl font-semibold">
+            {isPremiumFilter ? "Premium Workflows" : "Featured Workflows"}
+          </h2>
         </div>
         <div className="grid grid-cols-1 min-[540px]:grid-cols-2 md:grid-cols-3 gap-4">
           {textPrompts.map((p) => (

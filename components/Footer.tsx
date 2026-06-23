@@ -10,7 +10,6 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-6 text-sm text-[var(--text-secondary)]">
           <a href="/" className="hover:text-[var(--mango-soft)] transition-colors">Home</a>
-          <a href="/categories" className="hover:text-[var(--mango-soft)] transition-colors">Categories</a>
           <a href="/premium" className="hover:text-[var(--mango-soft)] transition-colors">Premium</a>
         </div>
       </div>

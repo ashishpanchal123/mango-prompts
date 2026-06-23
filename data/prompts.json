@@ -10,7 +10,10 @@
     "image": "/images/prompts/imagePrompt1.png",
     "trending": true,
     "creator": "@tariqHasanSyed",
-    "likes": "1.9k"
+    "likes": "1.9k",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt2",
@@ -23,7 +26,8 @@
     "image": "/images/prompts/imagePrompt2.png",
     "trending": false,
     "creator": "@edferreirajr",
-    "likes": "1.4k"
+    "likes": "1.4k",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt3",
@@ -36,7 +40,8 @@
     "image": "/images/prompts/imagePrompt3.png",
     "trending": false,
     "creator": "@_raffanascimento",
-    "likes": "1.1k"
+    "likes": "1.1k",
+    "source": "VEO"
   },
   {
     "id": "imageprompt4",
@@ -49,7 +54,8 @@
     "image": "/images/prompts/imagePrompt4.png",
     "trending": true,
     "creator": "@tiagoSantana",
-    "likes": "915"
+    "likes": "915",
+    "source": "AI IMAGE"
   },
   {
     "id": "imageprompt5",
@@ -62,7 +68,8 @@
     "image": "/images/prompts/imagePrompt5.png",
     "trending": false,
     "creator": "@hahibomarov",
-    "likes": "663"
+    "likes": "663",
+    "source": "AI IMAGE"
   },
   {
     "id": "imageprompt6",
@@ -75,7 +82,8 @@
     "image": "/images/prompts/imagePrompt6.png",
     "trending": false,
     "creator": "@EddieSan",
-    "likes": "612"
+    "likes": "612",
+    "source": "VEO"
   },
   {
     "id": "imageprompt7",
@@ -88,7 +96,10 @@
     "image": "/images/prompts/imagePrompt7.png",
     "trending": true,
     "creator": "@robsonazevedo",
-    "likes": "514"
+    "likes": "514",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt8",
@@ -97,11 +108,12 @@
     "description": "High-end street photography portrait of a traveler leaning on a lamp post before a historic tower.",
     "category": "Flux",
     "type": "visual",
-    "prompt": "Edit this image \u2014 transform the photo into a high-end street-photography portrait of a traveler/photographer leaning casually on a lamp post in front of a historic tower. Keep the original pose and composition: standing with left leg bent and foot on the lamp base, right leg relaxed, left hand in jacket pocket, right hand holding a camera down by the thigh, shoulders slightly turned to camera, chin up and gaze off-frame. Preserve the camera, beard, and textured jacket but enhance and stylize: keep the dark parka/jacket but enrich fabric texture, change inner hoodie to a soft charcoal knit, keep blue jeans but slightly deepened to rich indigo with natural creasing, emphasize the high-top sneakers with boosted contrast. Add a small messenger bag strap across the chest and a compact leather wrist strap on the camera. Use a cinematic cool-tone grade with warm golden rim light hitting the left side of the face and shoulder, suggesting late-afternoon sun. Emulate a 35-50mm prime lens look with shallow depth of field so the tower and crowd become painterly bokeh while the subject remains razor-sharp. Keep the busy pedestrian scene but soften and desaturate it so the subject pops, with the stone tower reading as a strong architectural anchor. Add a few falling autumn leaves and a faint wet-pavement sheen suggesting recent rain. Natural skin retouching preserving stubble and pores. Export as photorealistic, vertical 4K editorial crop with high detail. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "prompt": "Edit this image — transform the photo into a high-end street-photography portrait of a traveler/photographer leaning casually on a lamp post in front of a historic tower. Keep the original pose and composition: standing with left leg bent and foot on the lamp base, right leg relaxed, left hand in jacket pocket, right hand holding a camera down by the thigh, shoulders slightly turned to camera, chin up and gaze off-frame. Preserve the camera, beard, and textured jacket but enhance and stylize: keep the dark parka/jacket but enrich fabric texture, change inner hoodie to a soft charcoal knit, keep blue jeans but slightly deepened to rich indigo with natural creasing, emphasize the high-top sneakers with boosted contrast. Add a small messenger bag strap across the chest and a compact leather wrist strap on the camera. Use a cinematic cool-tone grade with warm golden rim light hitting the left side of the face and shoulder, suggesting late-afternoon sun. Emulate a 35-50mm prime lens look with shallow depth of field so the tower and crowd become painterly bokeh while the subject remains razor-sharp. Keep the busy pedestrian scene but soften and desaturate it so the subject pops, with the stone tower reading as a strong architectural anchor. Add a few falling autumn leaves and a faint wet-pavement sheen suggesting recent rain. Natural skin retouching preserving stubble and pores. Export as photorealistic, vertical 4K editorial crop with high detail. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "/images/prompts/imagePrompt8.png",
     "trending": false,
     "creator": "KhandujaBoy",
-    "likes": "493"
+    "likes": "493",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt9",
@@ -114,7 +126,8 @@
     "image": "/images/prompts/imagePrompt9.png",
     "trending": false,
     "creator": "AhmedKhalil",
-    "likes": "471"
+    "likes": "471",
+    "source": "VEO"
   },
   {
     "id": "imageprompt10",
@@ -127,7 +140,8 @@
     "image": "/images/prompts/imagePrompt10.png",
     "trending": false,
     "creator": "BKD",
-    "likes": "459"
+    "likes": "459",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt11",
@@ -140,7 +154,8 @@
     "image": "/images/prompts/imagePrompt11.png",
     "trending": true,
     "creator": "TonyFortem",
-    "likes": "431"
+    "likes": "431",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt12",
@@ -153,7 +168,8 @@
     "image": "/images/prompts/imagePrompt12.png",
     "trending": false,
     "creator": "@promptwithmeai",
-    "likes": "427"
+    "likes": "427",
+    "source": "VEO"
   },
   {
     "id": "imageprompt13",
@@ -166,7 +182,8 @@
     "image": "/images/prompts/imagePrompt13.png",
     "trending": false,
     "creator": "@hooman_fl",
-    "likes": "417"
+    "likes": "417",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt14",
@@ -179,7 +196,8 @@
     "image": "/images/prompts/imagePrompt14.png",
     "trending": false,
     "creator": "KnotSquared",
-    "likes": "412"
+    "likes": "412",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt15",
@@ -192,7 +210,8 @@
     "image": "/images/prompts/imagePrompt15.png",
     "trending": false,
     "creator": "HabibaAshraf",
-    "likes": "411"
+    "likes": "411",
+    "source": "VEO"
   },
   {
     "id": "imageprompt16",
@@ -201,11 +220,12 @@
     "description": "High-contrast cinematic editorial portrait on concrete steps with tattoos and a teal-orange grade.",
     "category": "Midjourney",
     "type": "visual",
-    "prompt": "Edit this image \u2014 transform the current shot into a high-contrast cinematic editorial of a young urban rebel while keeping the original pose and composition. Keep him seated center-frame on the concrete steps, legs apart, elbows resting on knees, hands reaching slightly forward toward camera, head tilted just a little to the right. Preserve his sunglasses, tousled hair, and light stubble. Keep the grey shearling denim jacket and charcoal tee but deepen textures and fabric detail; slightly darken and desaturate the jeans to charcoal; emphasize worn black combat boots. Add a subtle leather wrist cuff and a minimal gold watch on one wrist; enhance visible hand and forearm tattoos. Use a cinematic teal-orange grade with warm rim light from the left and cool shadow fill on the right, punchy midtone contrast, and a gentle vignette. Emulate a 50mm f/1.8 shallow depth of field, tight vertical crop, with natural skin retouching that retains stubble and texture. Add light film grain and subtle chromatic aberration for realism. Preserve the blurred stair repetition in the background but desaturate it, and add a faint orange neon glow on the left rail with a whisper of street mist at the lower steps. Output photorealistic, high detail, vertical 4K editorial crop. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "prompt": "Edit this image — transform the current shot into a high-contrast cinematic editorial of a young urban rebel while keeping the original pose and composition. Keep him seated center-frame on the concrete steps, legs apart, elbows resting on knees, hands reaching slightly forward toward camera, head tilted just a little to the right. Preserve his sunglasses, tousled hair, and light stubble. Keep the grey shearling denim jacket and charcoal tee but deepen textures and fabric detail; slightly darken and desaturate the jeans to charcoal; emphasize worn black combat boots. Add a subtle leather wrist cuff and a minimal gold watch on one wrist; enhance visible hand and forearm tattoos. Use a cinematic teal-orange grade with warm rim light from the left and cool shadow fill on the right, punchy midtone contrast, and a gentle vignette. Emulate a 50mm f/1.8 shallow depth of field, tight vertical crop, with natural skin retouching that retains stubble and texture. Add light film grain and subtle chromatic aberration for realism. Preserve the blurred stair repetition in the background but desaturate it, and add a faint orange neon glow on the left rail with a whisper of street mist at the lower steps. Output photorealistic, high detail, vertical 4K editorial crop. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "/images/prompts/imagePrompt16.png",
     "trending": false,
     "creator": "@HMJordo",
-    "likes": "410"
+    "likes": "410",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt17",
@@ -214,11 +234,12 @@
     "description": "High-contrast cinematic editorial portrait on concrete steps, alternate framing and detail.",
     "category": "Flux",
     "type": "visual",
-    "prompt": "Edit this image \u2014 transform the current shot into a high-contrast cinematic editorial of a young urban rebel while keeping the original pose and composition. Keep him seated center-frame on the concrete steps, legs apart, elbows resting on knees, hands reaching slightly forward toward camera, head tilted just a little to the right. Preserve his sunglasses, tousled hair, and light stubble. Keep the grey shearling denim jacket and charcoal tee but deepen textures and fabric detail; slightly darken and desaturate the jeans to charcoal; emphasize worn black combat boots. Add a subtle leather wrist cuff and a minimal gold watch on one wrist; enhance visible hand and forearm tattoos. Use a cinematic teal-orange grade with warm rim light from the left and cool shadow fill on the right, punchy midtone contrast, and a gentle vignette. Emulate a 50mm f/1.8 shallow depth of field, tight vertical crop, with natural skin retouching that retains stubble and texture. Add light film grain and subtle chromatic aberration for realism. Output photorealistic, high detail, vertical 4K editorial crop. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
+    "prompt": "Edit this image — transform the current shot into a high-contrast cinematic editorial of a young urban rebel while keeping the original pose and composition. Keep him seated center-frame on the concrete steps, legs apart, elbows resting on knees, hands reaching slightly forward toward camera, head tilted just a little to the right. Preserve his sunglasses, tousled hair, and light stubble. Keep the grey shearling denim jacket and charcoal tee but deepen textures and fabric detail; slightly darken and desaturate the jeans to charcoal; emphasize worn black combat boots. Add a subtle leather wrist cuff and a minimal gold watch on one wrist; enhance visible hand and forearm tattoos. Use a cinematic teal-orange grade with warm rim light from the left and cool shadow fill on the right, punchy midtone contrast, and a gentle vignette. Emulate a 50mm f/1.8 shallow depth of field, tight vertical crop, with natural skin retouching that retains stubble and texture. Add light film grain and subtle chromatic aberration for realism. Output photorealistic, high detail, vertical 4K editorial crop. Keep the face remain unchanged, strictly, no change in face. Strictly preserve the original face identity. The face must remain 100% unchanged across all generations, with no changes to facial features, structure, expression, skin tone, age, or identity.",
     "image": "/images/prompts/imagePrompt17.png",
     "trending": false,
     "creator": "@studiolumen",
-    "likes": "409"
+    "likes": "409",
+    "source": "GEMINI IMAGE"
   },
   {
     "id": "imageprompt18",
@@ -231,7 +252,8 @@
     "image": "/images/prompts/imagePrompt18.png",
     "trending": true,
     "creator": "@skylinecreates",
-    "likes": "398"
+    "likes": "398",
+    "source": "VEO"
   },
   {
     "id": "chatgpt-email-writer",
@@ -240,9 +262,12 @@
     "description": "Write any professional email in seconds with perfect tone and structure.",
     "category": "ChatGPT",
     "type": "text",
-    "prompt": "You are an expert business communication specialist. Write a professional email based on the following details:\n\nContext: [describe the situation]\nRecipient: [who are you emailing]\nPurpose: [what do you want to achieve]\nTone: [formal/semi-formal/friendly]\nKey points to cover: [list your main points]\n\nRequirements:\n- Subject line that gets opened\n- Clear, concise body paragraphs\n- Strong call to action\n- Professional closing\n- Keep it under 200 words unless the context requires more\n\nWrite the complete email now.",
+    "prompt": "You are an expert professional email writer.\n\nWrite a clear, polished, and action-oriented email based on the details I provide.\n\nBefore writing, understand:\n\n* Who the email is being sent to\n* The purpose of the email\n* The desired tone\n* The level of urgency\n* The outcome I want from the recipient\n\nEmail details:\n\n* Recipient:\n* Sender/context:\n* Purpose of the email:\n* Key points to include:\n* Desired tone: professional / warm / direct / persuasive / polite / firm\n* Urgency level: low / medium / high\n* Desired action from recipient:\n* Any deadline:\n* Any words or phrases to avoid:\n\nOutput format:\n\n1. Subject line\n2. Final email body\n3. Short alternate subject lines\n4. Optional shorter version of the email\n\nWriting rules:\n\n* Keep the email professional and easy to read.\n* Start with a natural opening.\n* Avoid robotic or overly formal language.\n* Make the message concise but complete.\n* Use simple business English.\n* Add a clear call-to-action.\n* Avoid unnecessary repetition.\n* If the topic is sensitive, keep the tone polite and solution-focused.\n* If information is missing, make reasonable assumptions and keep the email adaptable.\n\nNow write the final email.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
+    "source": "CHATGPT"
   },
   {
     "id": "chatgpt-blog-post",
@@ -253,7 +278,8 @@
     "type": "text",
     "prompt": "Act as an expert content writer and SEO specialist. Write a comprehensive blog post on: [topic]\n\nTarget keyword: [primary keyword]\nSecondary keywords: [list 3-5 related keywords]\nTarget audience: [describe your reader]\nWord count: [desired length]\nTone: [informative/conversational/authoritative]\n\nStructure the post with:\n1. Attention-grabbing H1 title (include primary keyword)\n2. Compelling introduction with a hook\n3. Well-organized body with H2 and H3 subheadings\n4. Actionable tips or insights in each section\n5. Real examples or statistics where relevant\n6. Strong conclusion with a clear takeaway\n7. SEO meta description (150-160 characters)\n\nEnsure natural keyword placement, short paragraphs for readability, and a writing style that keeps readers engaged from start to finish.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "CHATGPT"
   },
   {
     "id": "claude-prompt-optimizer",
@@ -262,9 +288,10 @@
     "description": "Transform weak prompts into powerful, precise instructions that get perfect results.",
     "category": "Claude",
     "type": "text",
-    "prompt": "You are a world-class prompt engineer who designs prompts used by Fortune 500 companies. Analyze and completely rewrite the following prompt to make it dramatically more effective:\n\nOriginal prompt: [paste your current prompt here]\nAI model target: [Claude/ChatGPT/Gemini]\nDesired output type: [what you want the AI to produce]\nUse case: [how you will use the output]\nCurrent problems with the output: [what is wrong with what you are getting now]\n\nRewrite the prompt with:\n1. Clear role assignment for the AI\n2. Precise context and background information\n3. Specific output format requirements\n4. Examples of desired tone and style\n5. Constraints and boundaries\n6. Quality criteria the output must meet\n7. Step-by-step reasoning instructions if needed\n\nThen explain what changes you made, why they help, and provide both a full and a quick version of the optimized prompt.",
+    "prompt": "You are an expert AI prompt engineer.\n\nYour task is to improve my rough prompt into a clear, powerful, and high-performing prompt that gives better results from AI tools like ChatGPT, Claude, Gemini, Midjourney, Veo, or other AI systems.\n\nMy rough prompt:\n[Paste rough prompt here]\n\nFirst, analyze the prompt and identify:\n\n* What the prompt is trying to achieve\n* What information is missing\n* Where the prompt is vague\n* What output format should be requested\n* What constraints should be added\n* What examples or context would improve the result\n\nThen rewrite the prompt using this structure:\n\n1. Role\n2. Goal\n3. Context\n4. Inputs\n5. Exact task\n6. Output format\n7. Constraints\n8. Quality rules\n9. Edge cases\n10. Final instruction\n\nOutput format:\nA. Improved prompt\nB. Why this version is better\nC. Optional shorter version\nD. Optional advanced version\n\nRules:\n\n* Do not make the prompt unnecessarily long.\n* Keep it practical and usable.\n* Preserve the original intent.\n* Add clarity, structure, and specificity.\n* Add exact output format where useful.\n* Add examples only if they improve quality.\n* Avoid generic wording.\n* Make the final prompt copy-ready.\n\nNow optimize my prompt.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "CLAUDE"
   },
   {
     "id": "claude-essay-writer",
@@ -275,7 +302,8 @@
     "type": "text",
     "prompt": "You are a distinguished academic writer with expertise across multiple disciplines. Write a comprehensive essay on:\n\nTopic: [your essay topic]\nAcademic level: [high school/undergraduate/graduate/PhD]\nWord count: [required length]\nCitation style: [APA/MLA/Chicago/Harvard]\nSubject area: [discipline or course]\nArgument or thesis direction: [the position you want to argue, or leave blank for balanced analysis]\n\nEssay structure:\n1. Introduction with a compelling hook and clear thesis statement\n2. Literature review or background context\n3. Well-developed body paragraphs with topic sentences, evidence, and analysis\n4. Counterargument and rebuttal section\n5. Synthesis and discussion of implications\n6. Conclusion that reinforces thesis and provides forward-looking perspective\n7. References list formatted correctly\n\nEnsure academic language, logical flow, critical thinking, and proper citation integration throughout.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "CLAUDE"
   },
   {
     "id": "marketing-email-campaign",
@@ -284,9 +312,10 @@
     "description": "Write a complete email marketing campaign sequence that converts subscribers.",
     "category": "Marketing",
     "type": "text",
-    "prompt": "You are a direct response email marketing expert. Create a complete email marketing campaign for:\n\nProduct or service: [what you are selling]\nPrice point: [cost]\nTarget audience: [describe ideal customer]\nCampaign goal: [launch/nurture/win-back/promotion]\nNumber of emails: [3/5/7/10 email sequence]\nSending schedule: [daily/every other day/weekly]\n\nFor each email provide subject line (plus 2 A/B variations), preview text, opening hook, body copy, call to action, and P.S. line.\n\nSequence structure: Welcome, value-driven story, address objection, social proof, urgency and final offer.\n\nWrite in a conversational, human tone. No corporate speak.",
+    "prompt": "You are an expert email marketing strategist and copywriter.\n\nCreate a complete email marketing campaign for the product, offer, or brand I describe.\n\nCampaign details:\n\n* Brand/product:\n* Target audience:\n* Campaign goal: sales / signups / reactivation / launch / awareness / retention\n* Offer or hook:\n* Customer pain point:\n* Key benefits:\n* Tone: premium / friendly / urgent / educational / luxury / playful / professional\n* Number of emails required:\n* Campaign duration:\n* CTA:\n* Any discount or deadline:\n* Words or claims to avoid:\n\nCreate a complete campaign with:\n\n1. Campaign strategy summary\n2. Audience angle\n3. Email sequence plan\n4. Subject lines for each email\n5. Preview text for each email\n6. Full email copy for each email\n7. CTA for each email\n8. Recommended send timing\n9. A/B test ideas\n10. Final conversion tips\n\nWriting rules:\n\n* Make every email feel different.\n* Do not repeat the same message.\n* Use strong but believable copy.\n* Focus on benefits, not only features.\n* Keep subject lines short and clickable.\n* Avoid spammy words unless necessary.\n* Add urgency naturally if relevant.\n* Make the campaign feel human and brand-safe.\n* Use simple language and clear CTAs.\n\nNow create the email marketing campaign.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "AI TEXT"
   },
   {
     "id": "marketing-brand-voice",
@@ -297,7 +326,8 @@
     "type": "text",
     "prompt": "You are a senior brand strategist. Develop a comprehensive brand voice and tone guide for:\n\nBrand name: [company name]\nIndustry: [market sector]\nMission: [what you stand for]\nCore values: [list 3-5 values]\nTarget audience: [who you serve]\nBrand personality words: [3-5 adjectives]\n\nDeliver: brand personality archetype with rationale, voice characteristics, tone variations for different contexts, vocabulary guide (words we use vs avoid), writing principles with before/after examples, dos and don'ts, sample copy across 5 formats, and guidance for external writers.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "AI TEXT"
   },
   {
     "id": "resume-ats-optimizer",
@@ -306,9 +336,10 @@
     "description": "Optimize your resume to pass Applicant Tracking Systems and get more interviews.",
     "category": "Resume",
     "type": "text",
-    "prompt": "You are a professional resume writer and ATS specialist. Optimize my resume for ATS systems:\n\nCurrent resume: [paste your current resume]\nTarget job posting: [paste the full job description]\nTarget company: [company name]\nTarget role: [exact job title]\nYears of experience: [number]\nTop skills to highlight: [list your strongest relevant skills]\n\nProvide an ATS score analysis, missing keywords, an optimized resume rewrite with achievement-based bullets in CAR format, an optimized skills section, a targeted summary statement, red flags to fix, and formatting rules. Target minimum 80% keyword match to the job description.",
+    "prompt": "You are an expert resume writer and ATS optimization specialist.\n\nOptimize my resume for the job description I provide.\n\nInputs:\nResume:\n[Paste resume here]\n\nJob description:\n[Paste job description here]\n\nYour task:\n\n1. Analyze the job description.\n2. Identify the most important keywords, skills, tools, responsibilities, and success metrics.\n3. Compare my resume against the job description.\n4. Find missing keywords and weak sections.\n5. Rewrite my resume content to improve ATS match and recruiter readability.\n\nOutput format:\nA. ATS match analysis\nB. Missing keywords\nC. Resume improvement recommendations\nD. Improved professional summary\nE. Improved work experience bullet points\nF. Skills section rewrite\nG. Final ATS-friendly resume version\nH. Additional suggestions for LinkedIn profile\n\nResume writing rules:\n\n* Keep the resume honest and based only on my real experience.\n* Do not invent fake achievements.\n* Strengthen weak bullet points using action verbs.\n* Add measurable impact where possible.\n* Use keywords naturally.\n* Keep language clear and professional.\n* Avoid overused phrases like “hardworking” or “team player”.\n* Make the resume suitable for both ATS and human recruiters.\n* Use concise bullet points.\n* Prioritize impact, ownership, tools, and outcomes.\n\nIf some metrics are missing, suggest placeholders I can fill in.\n\nNow optimize my resume for this job.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "AI TEXT"
   },
   {
     "id": "resume-linkedin-profile",
@@ -319,7 +350,8 @@
     "type": "text",
     "prompt": "You are a LinkedIn optimization expert. Completely optimize my LinkedIn profile:\n\nCurrent headline: [your current headline]\nCurrent about section: [paste current about]\nCurrent experience descriptions: [paste 2-3 recent roles]\nIndustry: [your field]\nCareer goal: [what roles or opportunities you want]\nTop 5 skills: [your strongest skills]\nKey achievement: [your proudest professional accomplishment]\n\nRewrite the headline (220 char max), about section (2600 char max storytelling structure), experience descriptions with quantified results, top 50 skills to add, featured section ideas, and engagement tips for algorithm visibility.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "AI TEXT"
   },
   {
     "id": "uxdesign-user-research",
@@ -328,9 +360,10 @@
     "description": "Design a comprehensive user research interview to uncover real user needs.",
     "category": "UX Design",
     "type": "text",
-    "prompt": "You are a senior UX researcher. Design a complete user research study for:\n\nProduct or feature: [describe what you are researching]\nResearch goal: [what decision does this research inform]\nUser type: [who are the participants]\nResearch phase: [discovery/usability/validation]\nKey assumptions to test: [hypotheses you want to validate or invalidate]\n\nDeliver a research plan, a recruitment screener (8-10 questions), a complete discussion guide (warm-up, context, core deep-dive, task-based exploration, wrap-up), an observation framework, an analysis template, and a report template. All questions open-ended, no leading questions.",
+    "prompt": "You are a senior UX researcher.\n\nCreate a complete user research interview guide for the product, feature, or problem I describe.\n\nResearch context:\n\n* Product/feature:\n* Target users:\n* Research goal:\n* Business goal:\n* What we already know:\n* What we need to learn:\n* Interview duration:\n* User segment:\n* Market/context:\n* Any assumptions to validate:\n\nCreate a detailed interview guide with:\n\n1. Research objective\n2. Participant criteria\n3. Moderator introduction script\n4. Warm-up questions\n5. Core discovery questions\n6. Behavior-based questions\n7. Pain point questions\n8. Motivation and decision-making questions\n9. Feature-specific questions\n10. Pricing or willingness-to-pay questions if relevant\n11. Closing questions\n12. Follow-up probes\n13. What not to ask\n14. Observation checklist\n15. Synthesis framework\n\nQuestion rules:\n\n* Avoid leading questions.\n* Ask about past behavior, not only opinions.\n* Use open-ended questions.\n* Include “why” and “tell me more” probes.\n* Keep the tone neutral and friendly.\n* Separate user needs from solution assumptions.\n* Focus on real workflows, frustrations, and decision points.\n\nAlso provide:\n\n* A short 30-minute version\n* A deeper 60-minute version\n* Key insights template after the interview\n\nNow create the user research interview guide.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "AI TEXT"
   },
   {
     "id": "uxdesign-wireframe-brief",
@@ -341,7 +374,8 @@
     "type": "text",
     "prompt": "You are a senior UX designer. Write a comprehensive wireframe brief for:\n\nProduct: [app/website/feature]\nPlatform: [web/iOS/Android/responsive]\nUser story: [as a [user], I want to [action] so that [benefit]]\nScope: [which screens or flows]\nBusiness objective: [what metric this improves]\n\nProvide a flow diagram, screen-by-screen breakdown (purpose, elements, content hierarchy, interactive behavior, states), navigation patterns, a component inventory, accessibility notes, edge cases, and design decision rationale.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "AI TEXT"
   },
   {
     "id": "coding-code-debugger",
@@ -350,9 +384,10 @@
     "description": "Diagnose and fix any coding bug with systematic debugging methodology.",
     "category": "Coding",
     "type": "text",
-    "prompt": "You are a senior software engineer with deep expertise in debugging complex systems. Debug the following issue:\n\nCode with bug: [paste your code]\nLanguage and version: [e.g. Python 3.11, Node.js 20]\nFramework: [if applicable]\nError message: [exact error output]\nExpected behavior: [what should happen]\nActual behavior: [what is happening instead]\nWhat I have already tried: [debugging steps attempted]\n\nProvide a root cause analysis, step-by-step explanation of what's wrong, fixed code with comments, why the fix works, edge cases to test, and prevention tips for this class of bug.",
+    "prompt": "You are an expert software engineer and debugging assistant.\n\nHelp me debug the issue I am facing in my codebase.\n\nProblem details:\n\n* Tech stack:\n* Framework/library:\n* Error message:\n* Expected behavior:\n* Actual behavior:\n* Relevant code:\n* Recent changes made:\n* Environment: local / staging / production\n* Browser/device if applicable:\n* Steps to reproduce:\n\nYour task:\n\n1. Understand the bug.\n2. Identify the most likely root causes.\n3. Explain the issue in simple terms.\n4. Suggest a step-by-step debugging plan.\n5. Provide the corrected code where possible.\n6. Mention any risky assumptions.\n7. Suggest tests to confirm the fix.\n8. Suggest preventive improvements.\n\nOutput format:\nA. Quick diagnosis\nB. Most likely root cause\nC. Step-by-step fix\nD. Corrected code\nE. Why the fix works\nF. Test cases\nG. Prevention checklist\n\nDebugging rules:\n\n* Do not guess blindly.\n* If information is missing, ask for the exact missing detail.\n* Prefer minimal safe changes first.\n* Do not rewrite the whole app unless required.\n* Preserve existing architecture.\n* Explain tradeoffs.\n* Highlight if the issue is frontend, backend, config, dependency, data, routing, state, or deployment related.\n* If multiple fixes are possible, recommend the safest one.\n\nNow debug my issue.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "AI TEXT"
   },
   {
     "id": "coding-api-design",
@@ -363,7 +398,8 @@
     "type": "text",
     "prompt": "You are a backend architect who designs APIs used by millions of developers. Design a complete REST API for:\n\nApplication: [describe your application]\nCore resources: [main entities, e.g. users, products, orders]\nAuthentication method: [JWT/OAuth2/API key]\nDatabase: [PostgreSQL/MongoDB/MySQL/etc]\nLanguage/framework: [Node.js Express/Python FastAPI/Go/etc]\n\nDesign the resource structure, endpoint documentation per resource (method, URL, request/response schema, status codes, rate limiting), authentication flow, error response standard, pagination design, filtering/sorting conventions, an OpenAPI 3.0 spec outline, and security considerations.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "AI TEXT"
   },
   {
     "id": "business-investor-pitch",
@@ -372,9 +408,10 @@
     "description": "Build a compelling investor pitch deck that gets meetings with top VCs.",
     "category": "Business",
     "type": "text",
-    "prompt": "You are a startup advisor who has helped companies raise from top-tier VCs. Create a compelling investor pitch deck for:\n\nCompany: [name and one-line description]\nStage: [pre-seed/seed/Series A]\nFunding ask: [amount raising]\nProduct: [what you build]\nMarket: [who buys it]\nTraction: [any revenue, users, growth]\nTeam: [founder backgrounds]\n\nCreate a complete 12-slide deck structure: cover, problem, solution, market size (TAM/SAM/SOM), product, business model, traction, go-to-market, competition, team, financials, and the ask. For each slide give the headline, key content, and data to include.",
+    "prompt": "You are an expert startup pitch deck strategist.\n\nCreate a compelling investor pitch deck for my startup idea.\n\nStartup details:\n\n* Startup name:\n* One-line idea:\n* Target customer:\n* Problem:\n* Current solution alternatives:\n* Our solution:\n* Product status: idea / MVP / live / revenue\n* Market:\n* Business model:\n* Traction:\n* Competitors:\n* Differentiation:\n* Team:\n* Funding ask:\n* Use of funds:\n* Key metrics:\n* Vision:\n\nCreate a complete investor pitch deck structure with:\n\n1. Title slide\n2. Problem\n3. Why now\n4. Target customer\n5. Solution\n6. Product demo/story\n7. Market opportunity\n8. Business model\n9. Traction\n10. Go-to-market strategy\n11. Competition\n12. Differentiation/moat\n13. Financial model overview\n14. Team\n15. Funding ask\n16. Use of funds\n17. Closing vision slide\n\nFor each slide, provide:\n\n* Slide title\n* Main message\n* Bullet points\n* Suggested visual\n* Speaker notes\n* What investors should understand from the slide\n\nWriting rules:\n\n* Make it clear, sharp, and investor-friendly.\n* Avoid vague startup buzzwords.\n* Focus on problem, market, traction, and business model.\n* Highlight why this can become large.\n* Keep each slide concise.\n* Use strong storytelling.\n* Include metrics wherever possible.\n* If traction is weak, position MVP, customer validation, or early signals clearly.\n* Make the pitch realistic and credible.\n\nAlso provide:\nA. 30-second elevator pitch\nB. 2-minute verbal pitch\nC. Common investor questions and best answers\nD. Weaknesses in the current pitch and how to improve them\n\nNow create the pitch deck content.",
     "image": null,
-    "trending": true
+    "trending": true,
+    "source": "AI TEXT"
   },
   {
     "id": "business-operations-sop",
@@ -385,6 +422,7 @@
     "type": "text",
     "prompt": "You are an operations specialist who has built SOPs for scaling companies. Write a complete Standard Operating Procedure for:\n\nProcess name: [name of the process]\nDepartment: [which team owns this]\nFrequency: [how often this is done]\nTrigger: [what starts this process]\nPeople involved: [roles that participate]\nSystems used: [tools, software, platforms]\n\nCreate the header section, process overview, a RACI roles matrix, numbered step-by-step instructions with decision points and time estimates, quality checks, a troubleshooting guide, and a glossary.",
     "image": null,
-    "trending": false
+    "trending": false,
+    "source": "AI TEXT"
   }
 ]

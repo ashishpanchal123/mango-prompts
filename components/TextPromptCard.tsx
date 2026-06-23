@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Prompt } from "@/lib/types";
 import CopyButton from "@/components/CopyButton";
 import CategoryBadge from "@/components/CategoryBadge";
+import PremiumButton from "@/components/PremiumButton";
+import PremiumBadge from "@/components/PremiumBadge";
 
 export default function TextPromptCard({ prompt }: { prompt: Prompt }) {
   return (
@@ -11,7 +13,10 @@ export default function TextPromptCard({ prompt }: { prompt: Prompt }) {
           Trending
         </span>
       )}
-      <CategoryBadge category={prompt.category} />
+      <div className="flex items-center gap-2">
+        <CategoryBadge category={prompt.category} source={prompt.source} />
+        <PremiumBadge prompt={prompt} />
+      </div>
       <Link href={`/prompt/${prompt.slug}`} className="block">
         <h3 className="text-lg font-semibold text-[var(--text-primary)] leading-snug group-hover:text-[var(--mango-soft)] transition-colors">
           {prompt.title}
@@ -21,7 +26,11 @@ export default function TextPromptCard({ prompt }: { prompt: Prompt }) {
         </p>
       </Link>
       <div className="mt-1">
-        <CopyButton text={prompt.prompt} />
+        {prompt.isPremium && prompt.paymentLink ? (
+          <PremiumButton prompt={prompt} className="inline-block w-full" />
+        ) : (
+          <CopyButton text={prompt.prompt} />
+        )}
       </div>
     </div>
   );

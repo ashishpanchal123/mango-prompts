@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import CopyButton from "@/components/CopyButton";
 import CategoryBadge from "@/components/CategoryBadge";
+import PremiumPromptGuard from "@/components/PremiumPromptGuard";
 import VisualPromptCard from "@/components/VisualPromptCard";
 import TextPromptCard from "@/components/TextPromptCard";
 import {
@@ -61,41 +62,39 @@ export default async function PromptDetailPage({
   const related = getRelatedPrompts(prompt, 4);
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12">
-      {prompt.image && (
-        <div className="relative w-full aspect-[4/5] sm:aspect-[16/9] rounded-xl overflow-hidden border border-[var(--border)] mb-8">
-          <Image
-            src={prompt.image}
-            alt={prompt.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover"
-            priority
-          />
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12 lg:py-16">
+      <div className={`grid grid-cols-1 ${prompt.image ? 'lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-16' : 'max-w-3xl mx-auto'}`}>
+        
+        {prompt.image && (
+          <div className="relative w-full aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden border border-[var(--border)] shadow-sm">
+            <Image
+              src={prompt.image}
+              alt={prompt.title}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+
+        <div className="flex flex-col justify-start pt-2 lg:pt-6">
+          <div>
+            <CategoryBadge category={prompt.category} source={prompt.source} />
+          </div>
+          <h1 className="font-logo text-3xl sm:text-4xl lg:text-5xl font-semibold mt-5 leading-tight">
+            {prompt.title}
+          </h1>
+          {prompt.description && (
+            <p className="text-[var(--text-secondary)] mt-4 text-base lg:text-lg leading-relaxed">
+              {prompt.description}
+            </p>
+          )}
+
+          <div className="mt-8">
+            <PremiumPromptGuard prompt={prompt} />
+          </div>
         </div>
-      )}
-
-      <CategoryBadge category={prompt.category} />
-      <h1 className="font-logo text-3xl sm:text-4xl font-semibold mt-4 leading-tight">
-        {prompt.title}
-      </h1>
-      {prompt.description && (
-        <p className="text-[var(--text-secondary)] mt-3 text-base leading-relaxed">
-          {prompt.description}
-        </p>
-      )}
-
-      <div className="mt-8 rounded-lg border border-[var(--border)] bg-[var(--bg-card)] p-5 sm:p-6">
-        <p className="text-xs uppercase tracking-wide text-[var(--text-muted)] mb-3">
-          Full Prompt
-        </p>
-        <p className="text-[var(--text-primary)] leading-relaxed whitespace-pre-wrap text-sm sm:text-base">
-          {prompt.prompt}
-        </p>
-      </div>
-
-      <div className="mt-6">
-        <CopyButton text={prompt.prompt} full />
       </div>
 
       {related.length > 0 && (

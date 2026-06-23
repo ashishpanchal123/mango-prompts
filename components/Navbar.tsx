@@ -32,9 +32,6 @@ export default function Navbar() {
           <Link href="/" className={linkClass("/")}>
             Home
           </Link>
-          <Link href="/categories" className={linkClass("/categories")}>
-            Categories
-          </Link>
           <Link href="/trending" className={linkClass("/trending")}>
             Trending
           </Link>
@@ -49,9 +46,6 @@ export default function Navbar() {
       <nav className="md:hidden flex items-center gap-5 text-sm px-4 sm:px-6 pb-3 overflow-x-auto scrollbar-thin">
         <Link href="/" className={linkClass("/")}>
           Home
-        </Link>
-        <Link href="/categories" className={linkClass("/categories")}>
-          Categories
         </Link>
         <Link href="/trending" className={linkClass("/trending")}>
           Trending

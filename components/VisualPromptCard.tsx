@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Prompt } from "@/lib/types";
 import CopyButton from "@/components/CopyButton";
+import PremiumButton from "@/components/PremiumButton";
+import PremiumBadge from "@/components/PremiumBadge";
 
 export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
   return (
@@ -23,9 +25,12 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
           <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
 
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-            <span className="text-[11px] font-semibold uppercase tracking-wide text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full truncate max-w-[70%]">
-              {prompt.title}
-            </span>
+            <div className="flex items-center gap-2 overflow-hidden">
+              <PremiumBadge prompt={prompt} className="flex-shrink-0" />
+              <span className="text-[11px] font-semibold uppercase tracking-wide text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full truncate">
+                {prompt.title}
+              </span>
+            </div>
             {prompt.likes && (
               <span className="text-xs font-medium text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full flex-shrink-0">
                 {prompt.likes} likes
@@ -42,7 +47,11 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
       </Link>
 
       <div className="flex items-center justify-between gap-2 px-3 py-2.5 bg-[var(--bg-card)]">
-        <CopyButton text={prompt.prompt} compact />
+        {prompt.isPremium && prompt.paymentLink ? (
+          <PremiumButton prompt={prompt} compact />
+        ) : (
+          <CopyButton text={prompt.prompt} compact />
+        )}
         {prompt.creator && (
           <span className="text-xs text-[var(--text-muted)] truncate">
             by {prompt.creator}
