@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex items-center gap-6">
         <Link href="/" className="flex-shrink-0 flex items-center">
-          <img src="/images/logo.png" alt="Mango Prompts" className="h-8 sm:h-11 w-auto drop-shadow-sm" />
+          <img src="/images/logo.png" alt="Mango Prompts" className="h-10 sm:h-14 w-auto drop-shadow-sm" />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/" className={linkClass("/")}>
