@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import PremiumAccessButton from "@/components/PremiumAccessButton";
 
 export const metadata: Metadata = {
   title: "Premium Prompts",
-  description: "Unlock selected premium prompts instantly and copy them after successful payment.",
+  description: "Get access to all premium prompts at ₹25 only.",
 };
 
 export default function PremiumPage() {
@@ -12,24 +12,22 @@ export default function PremiumPage() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="font-logo text-4xl sm:text-5xl font-semibold mb-6">Premium Prompts</h1>
         <p className="text-lg text-[var(--text-secondary)]">
-          Unlock selected premium prompts instantly and copy them after successful payment.
+          Get access to all premium prompts at ₹25 only.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Single Premium Prompt Card */}
+        {/* Premium Access Card */}
         <div className="group flex flex-col relative border-2 border-[var(--mango)] rounded-2xl p-6 bg-[var(--bg-card)] shadow-[0_0_15px_rgba(255,200,0,0.1)]">
           <div className="flex justify-between items-start mb-4">
             <span className="text-xs font-semibold px-2 py-1 bg-green-500/10 text-green-500 rounded-md tracking-wide">LIVE</span>
             <span className="font-semibold text-xl text-[var(--mango-soft)]">₹25</span>
           </div>
-          <h3 className="font-semibold text-lg mb-2">Single Premium Prompt</h3>
+          <h3 className="font-semibold text-lg mb-2">Premium Access</h3>
           <p className="text-sm text-[var(--text-secondary)] mb-8 flex-1">
-            Unlock one selected premium prompt instantly.
+            Get access to all premium prompts at ₹25 only.
           </p>
-          <Link href="/?filter=premium" className="block w-full text-center px-4 py-3 bg-[var(--text)] text-[var(--bg)] font-semibold rounded-xl hover:opacity-90 transition-opacity">
-            Browse Premium Prompts
-          </Link>
+          <PremiumAccessButton />
         </div>
 
         {/* Coming Soon Pack Cards */}

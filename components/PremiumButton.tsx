@@ -20,12 +20,9 @@ export default function PremiumButton({
     setIsMounted(true);
     if (prompt.isPremium) {
       try {
-        const unlockedStr = localStorage.getItem("unlockedPremiumPrompts");
-        if (unlockedStr) {
-          const unlocked = JSON.parse(unlockedStr);
-          if (Array.isArray(unlocked) && unlocked.includes(prompt.slug)) {
-            setIsUnlocked(true);
-          }
+        const premiumAccessUnlocked = localStorage.getItem("premiumAccessUnlocked");
+        if (premiumAccessUnlocked === "true") {
+          setIsUnlocked(true);
         }
       } catch (err) {
         console.error("Failed to read localStorage", err);
@@ -42,9 +39,7 @@ export default function PremiumButton({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    window.dispatchEvent(
-      new CustomEvent("open-premium-drawer", { detail: { prompt } })
-    );
+    window.dispatchEvent(new CustomEvent("open-premium-drawer"));
   };
 
   const baseClasses = "rounded-md font-medium transition-colors duration-200 border bg-transparent text-[var(--mango)] border-[var(--mango)] hover:bg-[var(--mango)] hover:text-[#1a1100] text-center";

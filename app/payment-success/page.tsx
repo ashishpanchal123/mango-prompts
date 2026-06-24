@@ -11,38 +11,32 @@ export default function PaymentSuccessPage() {
   useEffect(() => {
     const processUnlock = async () => {
       try {
-        const pendingId = localStorage.getItem("pendingPremiumPromptId");
-        if (!pendingId) {
+        const premiumAccessPending = localStorage.getItem("premiumAccessPending");
+        
+        if (premiumAccessPending === "true") {
+          // Set all-access unlock
+          localStorage.setItem("premiumAccessUnlocked", "true");
+          
+          // Clear pending states
+          localStorage.removeItem("premiumAccessPending");
+          localStorage.removeItem("premiumUnlockType");
+          localStorage.removeItem("pendingPremiumPromptId"); // Clear legacy pending id if any
+          
+          setStatus("Payment successful. All premium prompts are now unlocked.");
+          
+          // Redirect to home after a short delay
+          setTimeout(() => {
+            router.push("/");
+          }, 2000);
+        } else {
+          // Fallback if accessed without pending state
           setError(true);
-          setStatus("No pending premium prompt found.");
-          return;
+          setStatus("No pending premium transaction found.");
         }
-
-        // Add to unlocked array
-        const unlockedStr = localStorage.getItem("unlockedPremiumPrompts");
-        let unlocked: string[] = [];
-        if (unlockedStr) {
-          unlocked = JSON.parse(unlockedStr);
-        }
-        
-        if (!unlocked.includes(pendingId)) {
-          unlocked.push(pendingId);
-          localStorage.setItem("unlockedPremiumPrompts", JSON.stringify(unlocked));
-        }
-
-        // Clear pending
-        localStorage.removeItem("pendingPremiumPromptId");
-
-        setStatus("Payment successful! Your premium prompt is unlocked. Redirecting...");
-        
-        // Redirect back to prompt after a short delay
-        setTimeout(() => {
-          router.push(`/prompt/${pendingId}`);
-        }, 2000);
       } catch (err) {
         console.error(err);
         setError(true);
-        setStatus("An error occurred while unlocking your prompt.");
+        setStatus("An error occurred while unlocking premium access.");
       }
     };
 

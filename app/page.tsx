@@ -31,11 +31,11 @@ export default async function HomePage({
           Curated prompts for ChatGPT, Claude, Gemini, Midjourney, Veo and more.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="#free-prompts" className="px-6 py-3 bg-[var(--mango)] text-black font-semibold rounded-full hover:bg-[var(--mango-soft)] transition-colors">
+          <Link href="/#free-prompts" className="px-6 py-3 bg-[var(--mango)] text-black font-semibold rounded-full hover:bg-[var(--mango-soft)] transition-colors">
             Browse Free Prompts
           </Link>
-          <Link href="/premium" className="px-6 py-3 border border-[var(--border)] text-[var(--text)] font-semibold rounded-full hover:border-[var(--text-muted)] transition-colors">
-            Explore Premium
+          <Link href="/?filter=premium#free-prompts" className="px-6 py-3 border border-[var(--border)] text-[var(--text)] font-semibold rounded-full hover:border-[var(--text-muted)] transition-colors">
+            Browse Premium Prompts
           </Link>
         </div>
       </section>
