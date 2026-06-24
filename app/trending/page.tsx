@@ -17,8 +17,8 @@ export default function TrendingPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
       <h1 className="font-logo text-3xl sm:text-4xl font-semibold">Trending</h1>
-      <p className="text-[var(--text-secondary)] mt-2 mb-10">
-        The prompts everyone is copying right now.
+      <p className="text-lg text-[var(--text-secondary)] mt-2 mb-10">
+        Popular prompt picks curated for better AI results.
       </p>
 
       {visual.length > 0 && (

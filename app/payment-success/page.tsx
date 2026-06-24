@@ -22,12 +22,14 @@ export default function PaymentSuccessPage() {
           localStorage.removeItem("premiumUnlockType");
           localStorage.removeItem("pendingPremiumPromptId"); // Clear legacy pending id if any
           
-          setStatus("Payment successful. All premium prompts are now unlocked.");
+          sessionStorage.setItem("premiumUnlockJustCompleted", "true");
+          
+          setStatus("Payment successful. All premium prompts are unlocked.");
           
           // Redirect to home after a short delay
           setTimeout(() => {
             router.push("/");
-          }, 2000);
+          }, 1500);
         } else {
           // Fallback if accessed without pending state
           setError(true);

@@ -3,6 +3,7 @@ import Link from "next/link";
 import VisualPromptCard from "@/components/VisualPromptCard";
 import TextPromptCard from "@/components/TextPromptCard";
 import { getVisualPrompts, getTextPrompts } from "@/lib/prompts";
+import SuccessToast from "@/components/SuccessToast";
 
 export default async function HomePage({
   searchParams,
@@ -22,13 +23,14 @@ export default async function HomePage({
 
   return (
     <div>
+      <SuccessToast />
       {/* HERO SECTION */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 pt-10 pb-6 text-center">
         <h1 className="font-logo text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight">
           Discover AI Prompts That Actually Work
         </h1>
         <p className="mt-4 text-base sm:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed">
-          Curated prompts for ChatGPT, Claude, Gemini, Midjourney, Veo and more.
+          Curated prompts for AI writing, image creation, video ideas, workflows and more.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/#free-prompts" className="px-6 py-3 bg-[var(--mango)] text-black font-semibold rounded-full hover:bg-[var(--mango-soft)] transition-colors">

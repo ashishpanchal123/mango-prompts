@@ -31,11 +31,6 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
                 {prompt.title}
               </span>
             </div>
-            {prompt.likes && (
-              <span className="text-xs font-medium text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full flex-shrink-0">
-                {prompt.likes} likes
-              </span>
-            )}
           </div>
 
           {prompt.description && (
@@ -52,11 +47,9 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
         ) : (
           <CopyButton text={prompt.prompt} compact />
         )}
-        {prompt.creator && (
-          <span className="text-xs text-[var(--text-muted)] truncate">
-            by {prompt.creator}
-          </span>
-        )}
+        <span className="text-xs text-[var(--text-muted)] truncate">
+          Mango Curated
+        </span>
       </div>
     </div>
   );

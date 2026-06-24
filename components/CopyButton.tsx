@@ -66,7 +66,7 @@ export default function CopyButton({
           : "bg-transparent text-[var(--mango-soft)] border-[var(--mango)] hover:bg-[var(--mango)] hover:text-[#1a1100]"
       } ${className}`}
     >
-      {copied ? "Copied!" : compact ? "Copy" : "Copy Prompt"}
+      {copied ? "Copied!" : "Copy Prompt"}
     </button>
   );
 }

@@ -48,7 +48,7 @@ export default function PremiumDrawer() {
         <div className="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
           <div className="text-center mt-2">
              <div className="text-4xl font-bold mb-3 text-[var(--mango-soft)]">₹25</div>
-             <p className="text-[var(--text-primary)] text-lg font-medium">Get access to all premium prompts for ₹25 only.</p>
+             <p className="text-[var(--text-primary)] text-lg font-medium">Get one-time access to all premium prompts for ₹25.</p>
           </div>
 
           <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5 relative overflow-hidden mt-2">
@@ -59,7 +59,7 @@ export default function PremiumDrawer() {
              <ul className="space-y-3 text-sm text-[var(--text-secondary)]">
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
-                  Unlock all premium prompt cards
+                  Unlock every premium prompt
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
@@ -81,7 +81,7 @@ export default function PremiumDrawer() {
                onClick={handlePay}
                className="w-full py-3.5 bg-[var(--mango)] text-[#1a1100] font-semibold rounded-xl hover:bg-[var(--mango-soft)] transition-colors"
              >
-               Subscribe Now - ₹25
+               Pay ₹25 & Unlock
              </button>
              <button 
                onClick={() => setIsOpen(false)}

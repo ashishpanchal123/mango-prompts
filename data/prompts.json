@@ -41,7 +41,9 @@
     "trending": false,
     "creator": "@_raffanascimento",
     "likes": "1.1k",
-    "source": "VEO"
+    "source": "VEO",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/VvzQZlyn"
   },
   {
     "id": "imageprompt4",
@@ -291,7 +293,9 @@
     "prompt": "You are an expert AI prompt engineer.\n\nYour task is to improve my rough prompt into a clear, powerful, and high-performing prompt that gives better results from AI tools like ChatGPT, Claude, Gemini, Midjourney, Veo, or other AI systems.\n\nMy rough prompt:\n[Paste rough prompt here]\n\nFirst, analyze the prompt and identify:\n\n* What the prompt is trying to achieve\n* What information is missing\n* Where the prompt is vague\n* What output format should be requested\n* What constraints should be added\n* What examples or context would improve the result\n\nThen rewrite the prompt using this structure:\n\n1. Role\n2. Goal\n3. Context\n4. Inputs\n5. Exact task\n6. Output format\n7. Constraints\n8. Quality rules\n9. Edge cases\n10. Final instruction\n\nOutput format:\nA. Improved prompt\nB. Why this version is better\nC. Optional shorter version\nD. Optional advanced version\n\nRules:\n\n* Do not make the prompt unnecessarily long.\n* Keep it practical and usable.\n* Preserve the original intent.\n* Add clarity, structure, and specificity.\n* Add exact output format where useful.\n* Add examples only if they improve quality.\n* Avoid generic wording.\n* Make the final prompt copy-ready.\n\nNow optimize my prompt.",
     "image": null,
     "trending": true,
-    "source": "CLAUDE"
+    "source": "CLAUDE",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/VvzQZlyn"
   },
   {
     "id": "claude-essay-writer",
@@ -411,7 +415,9 @@
     "prompt": "You are an expert startup pitch deck strategist.\n\nCreate a compelling investor pitch deck for my startup idea.\n\nStartup details:\n\n* Startup name:\n* One-line idea:\n* Target customer:\n* Problem:\n* Current solution alternatives:\n* Our solution:\n* Product status: idea / MVP / live / revenue\n* Market:\n* Business model:\n* Traction:\n* Competitors:\n* Differentiation:\n* Team:\n* Funding ask:\n* Use of funds:\n* Key metrics:\n* Vision:\n\nCreate a complete investor pitch deck structure with:\n\n1. Title slide\n2. Problem\n3. Why now\n4. Target customer\n5. Solution\n6. Product demo/story\n7. Market opportunity\n8. Business model\n9. Traction\n10. Go-to-market strategy\n11. Competition\n12. Differentiation/moat\n13. Financial model overview\n14. Team\n15. Funding ask\n16. Use of funds\n17. Closing vision slide\n\nFor each slide, provide:\n\n* Slide title\n* Main message\n* Bullet points\n* Suggested visual\n* Speaker notes\n* What investors should understand from the slide\n\nWriting rules:\n\n* Make it clear, sharp, and investor-friendly.\n* Avoid vague startup buzzwords.\n* Focus on problem, market, traction, and business model.\n* Highlight why this can become large.\n* Keep each slide concise.\n* Use strong storytelling.\n* Include metrics wherever possible.\n* If traction is weak, position MVP, customer validation, or early signals clearly.\n* Make the pitch realistic and credible.\n\nAlso provide:\nA. 30-second elevator pitch\nB. 2-minute verbal pitch\nC. Common investor questions and best answers\nD. Weaknesses in the current pitch and how to improve them\n\nNow create the pitch deck content.",
     "image": null,
     "trending": true,
-    "source": "AI TEXT"
+    "source": "AI TEXT",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/VvzQZlyn"
   },
   {
     "id": "business-operations-sop",

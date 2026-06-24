@@ -49,7 +49,7 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
             Subscribe Now
           </button>
           <p className="text-sm text-[var(--text-secondary)] max-w-md mx-auto">
-            Get access to all premium prompts at ₹25 only.
+            Subscribe for ₹25 to unlock all premium prompts and copy this prompt.
           </p>
         </div>
       </div>
