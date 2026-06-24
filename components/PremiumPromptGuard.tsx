@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Prompt } from "@/lib/types";
 import CopyButton from "@/components/CopyButton";
+import OpenGeminiButton from "@/components/OpenGeminiButton";
 
 export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -89,15 +90,10 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
           </ol>
           <div className="flex flex-col sm:flex-row gap-3">
             <CopyButton text={prompt.prompt} full isVisual />
-            <a
-              href="https://gemini.google.com/app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-medium rounded-md border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] hover:border-[var(--text-muted)] transition-colors text-[var(--text)]"
-            >
-              Open Gemini
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-            </a>
+            <OpenGeminiButton 
+              promptText={prompt.prompt}
+              className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-medium rounded-md border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] hover:border-[var(--text-muted)] transition-colors text-[var(--text)] cursor-pointer"
+            />
           </div>
         </div>
       ) : (

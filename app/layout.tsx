@@ -80,6 +80,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfairDisplay.variable} ${beVietnamPro.variable} h-full`}
       data-scroll-behavior="smooth"
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Navbar />
