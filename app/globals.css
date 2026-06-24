@@ -58,6 +58,7 @@ a {
   height: 6px;
   width: 6px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 4px;

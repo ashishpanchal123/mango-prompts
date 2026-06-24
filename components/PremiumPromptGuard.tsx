@@ -38,18 +38,18 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
       <div className="mt-8 rounded-lg border border-[var(--mango)]/30 bg-[var(--mango)]/5 p-6 sm:p-8 text-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--mango)] to-transparent opacity-50" />
         <h3 className="text-xl font-semibold mb-6 flex items-center justify-center gap-2">
-          <svg className="w-5 h-5 text-[var(--mango)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          <svg className="w-5 h-5 text-[var(--mango)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
           Premium Content
         </h3>
         <div className="flex flex-col items-center justify-center gap-3">
-          <button 
+          <button
             onClick={handleOpenDrawer}
             className="px-8 py-3 bg-[var(--mango)] text-[#1a1100] font-semibold rounded-full hover:bg-[var(--mango-soft)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
           >
             Subscribe Now
           </button>
           <p className="text-sm text-[var(--text-secondary)] max-w-md mx-auto">
-            {prompt.type === "visual" 
+            {prompt.type === "visual"
               ? "Subscribe to unlock this image prompt. After unlock, copy it and use it in Gemini with your uploaded photo."
               : "Subscribe for ₹25 to unlock all premium prompts and copy this prompt."}
           </p>
@@ -68,7 +68,7 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
           </p>
           {prompt.isPremium && isUnlocked && (
             <span className="text-xs font-bold text-green-500 flex items-center gap-1 animate-[pulse_2s_ease-in-out_1]">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
               Unlocked
             </span>
           )}
@@ -89,14 +89,14 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
           </ol>
           <div className="flex flex-col sm:flex-row gap-3">
             <CopyButton text={prompt.prompt} full isVisual />
-            <a 
+            <a
               href="https://gemini.google.com/app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-medium rounded-md border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] hover:border-[var(--text-muted)] transition-colors text-[var(--text)]"
             >
               Open Gemini
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
             </a>
           </div>
         </div>
