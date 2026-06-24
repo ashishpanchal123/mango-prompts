@@ -20,7 +20,7 @@ const beVietnamPro = localFont({
   display: "swap",
 });
 
-const SITE_URL = "https://mangoprompts.vercel.app";
+const SITE_URL = "https://mangoxprompts.vercel.app";
 
 export const viewport: Viewport = {
   themeColor: "#000000",

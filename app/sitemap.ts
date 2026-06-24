@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs, getAllCategories } from "@/lib/prompts";
 
-const SITE_URL = "https://mangoprompts.vercel.app";
+const SITE_URL = "https://mangoxprompts.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
