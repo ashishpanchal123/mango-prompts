@@ -7,11 +7,13 @@ export default function CopyButton({
   className = "",
   full = false,
   compact = false,
+  isVisual = false,
 }: {
   text: string;
   className?: string;
   full?: boolean;
   compact?: boolean;
+  isVisual?: boolean;
 }) {
   const [copied, setCopied] = useState(false);
 
@@ -66,7 +68,7 @@ export default function CopyButton({
           : "bg-transparent text-[var(--mango-soft)] border-[var(--mango)] hover:bg-[var(--mango)] hover:text-[#1a1100]"
       } ${className}`}
     >
-      {copied ? "Copied!" : "Copy Prompt"}
+      {copied ? (isVisual ? "Copied! Now open Gemini, upload your photo, and paste this prompt." : "Copied!") : "Copy Prompt"}
     </button>
   );
 }

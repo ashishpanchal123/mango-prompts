@@ -42,15 +42,37 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* TRUST SECTION */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-6 text-center">
-        <p className="text-sm font-medium text-[var(--text-secondary)] uppercase tracking-wider mb-4">Why Mango Prompts?</p>
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-[var(--text)]">
-          <span className="flex items-center gap-2"><svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>Curated</span>
-          <span className="flex items-center gap-2"><svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>Copy & Use Instantly</span>
-          <span className="flex items-center gap-2"><svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>Tested Prompts</span>
-          <span className="flex items-center gap-2"><svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>Updated Regularly</span>
+      {/* HOW TO USE SECTION */}
+      <section className="mx-auto max-w-4xl px-4 sm:px-6 py-8 text-center">
+        <h2 className="text-xs font-semibold text-[var(--text-secondary)] uppercase tracking-wider mb-6">How to use image prompts?</h2>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-5 text-[var(--text)]">
+          <div className="flex items-center gap-2.5">
+            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">1</span>
+            <span className="text-sm font-medium">Open Gemini</span>
+          </div>
+          <svg className="hidden sm:block w-4 h-4 text-[var(--border)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
+          <div className="flex items-center gap-2.5">
+            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">2</span>
+            <span className="text-sm font-medium">Upload your face/photo</span>
+          </div>
+          <svg className="hidden sm:block w-4 h-4 text-[var(--border)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
+          <div className="flex items-center gap-2.5">
+            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">3</span>
+            <span className="text-sm font-medium">Paste prompt & generate</span>
+          </div>
         </div>
+        <p className="text-xs text-[var(--text-muted)] mb-5">
+          For portrait prompts, upload your photo first, then paste the copied prompt in Gemini.
+        </p>
+        <a 
+          href="https://gemini.google.com/app" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2 border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] text-xs font-medium rounded-full hover:border-[var(--text-muted)] transition-colors text-[var(--text-secondary)]"
+        >
+          Open Gemini
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
       </section>
 
 

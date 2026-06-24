@@ -49,7 +49,9 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
             Subscribe Now
           </button>
           <p className="text-sm text-[var(--text-secondary)] max-w-md mx-auto">
-            Subscribe for ₹25 to unlock all premium prompts and copy this prompt.
+            {prompt.type === "visual" 
+              ? "Subscribe to unlock this image prompt. After unlock, copy it and use it in Gemini with your uploaded photo."
+              : "Subscribe for ₹25 to unlock all premium prompts and copy this prompt."}
           </p>
         </div>
       </div>
@@ -76,9 +78,33 @@ export default function PremiumPromptGuard({ prompt }: { prompt: Prompt }) {
         </p>
       </div>
 
-      <div className="mt-6">
-        <CopyButton text={prompt.prompt} full />
-      </div>
+      {prompt.type === "visual" ? (
+        <div className="mt-8 mb-4 rounded-lg border border-[var(--border)] bg-[var(--bg)] p-5 sm:p-6">
+          <h4 className="font-semibold text-sm mb-4">How to use this image prompt</h4>
+          <ol className="text-sm text-[var(--text-secondary)] space-y-2.5 list-decimal list-inside mb-6 font-medium">
+            <li>Open Gemini</li>
+            <li>Upload your face/photo</li>
+            <li>Paste this prompt</li>
+            <li>Generate your image</li>
+          </ol>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <CopyButton text={prompt.prompt} full isVisual />
+            <a 
+              href="https://gemini.google.com/app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-medium rounded-md border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] hover:border-[var(--text-muted)] transition-colors text-[var(--text)]"
+            >
+              Open Gemini
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+      ) : (
+        <div className="mt-6">
+          <CopyButton text={prompt.prompt} full />
+        </div>
+      )}
     </>
   );
 }

@@ -41,15 +41,21 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
         </div>
       </Link>
 
-      <div className="flex items-center justify-between gap-2 px-3 py-2.5 bg-[var(--bg-card)]">
-        {prompt.isPremium && prompt.paymentLink ? (
-          <PremiumButton prompt={prompt} compact />
-        ) : (
-          <CopyButton text={prompt.prompt} compact />
-        )}
-        <span className="text-xs text-[var(--text-muted)] truncate">
-          Mango Curated
-        </span>
+      <div className="flex flex-col gap-2 px-3 py-2.5 bg-[var(--bg-card)]">
+        <div className="flex items-center justify-between gap-2">
+          {prompt.isPremium && prompt.paymentLink ? (
+            <PremiumButton prompt={prompt} compact />
+          ) : (
+            <CopyButton text={prompt.prompt} compact isVisual />
+          )}
+          <span className="text-xs text-[var(--text-muted)] truncate">
+            Mango Curated
+          </span>
+        </div>
+        <p className="text-[10px] text-[var(--text-muted)] flex items-center gap-1.5 font-medium">
+          <svg className="w-3 h-3 text-[var(--mango)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Upload photo + paste prompt in Gemini
+        </p>
       </div>
     </div>
   );
