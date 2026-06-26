@@ -85,6 +85,8 @@
     "trending": false,
     "creator": "@EddieSan",
     "likes": "612",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "VEO"
   },
   {
@@ -143,6 +145,8 @@
     "trending": false,
     "creator": "BKD",
     "likes": "459",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "GEMINI IMAGE"
   },
   {
@@ -171,6 +175,8 @@
     "trending": false,
     "creator": "@promptwithmeai",
     "likes": "427",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "VEO"
   },
   {
@@ -199,6 +205,8 @@
     "trending": false,
     "creator": "KnotSquared",
     "likes": "412",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "GEMINI IMAGE"
   },
   {
@@ -227,6 +235,8 @@
     "trending": false,
     "creator": "@HMJordo",
     "likes": "410",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "GEMINI IMAGE"
   },
   {
@@ -255,6 +265,8 @@
     "trending": true,
     "creator": "@skylinecreates",
     "likes": "398",
+    "isPremium": true,
+    "paymentLink": "https://rzp.io/rzp/WBdXvWD",
     "source": "VEO"
   },
   {
