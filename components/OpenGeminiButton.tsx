@@ -18,23 +18,30 @@ export default function OpenGeminiButton({
     setIsMobile(isMobileOrWebView());
   }, []);
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent) => {
     if (promptText && isMobile) {
+      e.preventDefault();
       setShowModal(true);
-    } else {
-      openGemini();
     }
+    // If not mobile or no promptText, let the native <a> tag handle the navigation
   };
+
+  const geminiUrl = "https://gemini.google.com/app";
+  const shouldIntercept = promptText && isMobile;
 
   return (
     <>
-      <button 
+      <a 
+        href={shouldIntercept ? undefined : geminiUrl}
+        target={shouldIntercept ? undefined : "_blank"}
+        rel="noopener noreferrer"
         onClick={handleClick}
         className={className}
+        style={{ cursor: "pointer" }}
       >
         Open Gemini
         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      </button>
+      </a>
 
       {/* Bottom Sheet Modal */}
       {showModal && (
@@ -53,13 +60,15 @@ export default function OpenGeminiButton({
               </p>
               <div className="flex flex-col gap-3">
                 <CopyButton text={promptText!} full isVisual />
-                <button
-                  onClick={() => openGemini()}
+                <a
+                  href={geminiUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-medium rounded-md border border-[var(--border)] bg-[var(--bg-elevated)] hover:bg-[var(--bg)] transition-colors text-[var(--text-primary)]"
                 >
                   Open Gemini
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                </button>
+                </a>
                 <button
                   onClick={() => setShowModal(false)}
                   className="w-full py-2 text-sm font-medium rounded-md text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors mt-2"
