@@ -45,26 +45,11 @@ export default async function HomePage({
 
       {/* HOW TO USE SECTION */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 py-8 text-center">
-        <h2 className="text-xs font-semibold text-[var(--text-secondary)] uppercase tracking-wider mb-6">How to use image prompts?</h2>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-5 text-[var(--text)]">
-          <div className="flex items-center gap-2.5">
-            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">1</span>
-            <span className="text-sm font-medium">Open Gemini</span>
-          </div>
-          <svg className="hidden sm:block w-4 h-4 text-[var(--border)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
-          <div className="flex items-center gap-2.5">
-            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">2</span>
-            <span className="text-sm font-medium">Upload your face/photo</span>
-          </div>
-          <svg className="hidden sm:block w-4 h-4 text-[var(--border)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
-          <div className="flex items-center gap-2.5">
-            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--mango)]/20 text-[var(--mango-soft)] text-xs font-bold">3</span>
-            <span className="text-sm font-medium">Paste prompt & generate</span>
-          </div>
-        </div>
-        <p className="text-xs text-[var(--text-muted)] mb-5">
-          For portrait prompts, upload your photo first, then paste the copied prompt in Gemini.
-        </p>
+        <img 
+          src="/images/how-to-use.png" 
+          alt="How to use image prompts" 
+          className="w-full h-auto mx-auto mb-6 drop-shadow-xl rounded-2xl" 
+        />
         <OpenGeminiButton 
           className="inline-flex items-center gap-2 px-5 py-2 border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg)] text-xs font-medium rounded-full hover:border-[var(--text-muted)] transition-colors text-[var(--text-secondary)] cursor-pointer"
         />
