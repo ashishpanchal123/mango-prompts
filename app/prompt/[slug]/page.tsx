@@ -26,21 +26,26 @@ export async function generateMetadata({
   if (!prompt) {
     return { title: "Prompt Not Found" };
   }
-  const description =
-    prompt.description ||
-    `${prompt.title} — a ${prompt.category} prompt on Mango Prompts. Copy and use it instantly.`;
+  const title = `${prompt.title} — MangoXPrompts`;
+  const description = `Copy a curated AI prompt for ${prompt.title}. Designed for better AI image, video, writing, and creative results.`;
+  const url = `https://www.mangoxprompts.xyz/prompt/${slug}`;
+
   return {
-    title: prompt.title,
+    title,
     description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: `${prompt.title} | Mango Prompts`,
+      title,
       description,
       type: "article",
+      url,
       images: prompt.image ? [{ url: prompt.image, width: 1200, height: 1500 }] : undefined,
     },
     twitter: {
       card: prompt.image ? "summary_large_image" : "summary",
-      title: `${prompt.title} | Mango Prompts`,
+      title,
       description,
       images: prompt.image ? [prompt.image] : undefined,
     },
@@ -60,9 +65,29 @@ export default async function PromptDetailPage({
   }
 
   const related = getRelatedPrompts(prompt, 4);
+  const url = `https://www.mangoxprompts.xyz/prompt/${slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: prompt.title,
+    description: prompt.description || `A curated AI prompt for ${prompt.title}.`,
+    author: {
+      "@type": "Organization",
+      name: "MangoXPrompts"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "MangoXPrompts"
+    },
+    url: url
+  };
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12 lg:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className={`grid grid-cols-1 ${prompt.image ? 'lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-16' : 'max-w-3xl mx-auto'}`}>
         
         {prompt.image && (

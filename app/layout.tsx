@@ -32,41 +32,46 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mango Prompts | AI Prompt Library",
-    template: "%s | Mango Prompts",
+    default: "MangoXPrompts — AI Image, Video & Writing Prompt Library",
+    template: "%s | MangoXPrompts",
   },
   description:
-    "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
+    "Discover curated AI prompts for Gemini image generation, portrait prompts, video ideas, ChatGPT workflows, personal branding, and creative content generation.",
   keywords: [
     "AI prompts",
+    "Gemini prompts",
+    "image prompts",
+    "portrait prompts",
+    "video prompts",
     "ChatGPT prompts",
-    "Claude prompts",
-    "Midjourney prompts",
-    "Flux prompts",
-    "Veo prompts",
     "prompt library",
-    "AI prompt gallery",
+    "AI image generation",
+    "premium prompts",
+    "MangoXPrompts",
   ],
-  authors: [{ name: "Ashish Panchal" }],
-  creator: "Ashish Panchal",
+  authors: [{ name: "MangoXPrompts" }],
+  creator: "MangoXPrompts",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Mango Prompts",
-    title: "Mango Prompts | AI Prompt Library",
+    siteName: "MangoXPrompts",
+    title: "MangoXPrompts — AI Prompt Library",
     description:
-      "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
+      "Curated AI prompts for image generation, video ideas, writing, branding, and creative workflows.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mango Prompts | AI Prompt Library",
+    title: "MangoXPrompts — AI Prompt Library",
     description:
-      "Discover curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and Veo.",
+      "Curated AI prompts for image generation, video ideas, writing, branding, and creative workflows.",
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 

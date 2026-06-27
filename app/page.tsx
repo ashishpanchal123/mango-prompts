@@ -24,6 +24,36 @@ export default async function HomePage({
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "MangoXPrompts",
+            url: "https://www.mangoxprompts.xyz",
+            description: "Curated AI prompt library for image, video, writing, and workflow prompts.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://www.mangoxprompts.xyz/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "MangoXPrompts",
+            url: "https://www.mangoxprompts.xyz",
+            logo: "https://www.mangoxprompts.xyz/images/logo.png",
+            sameAs: []
+          }),
+        }}
+      />
       <SuccessToast />
       {/* HERO SECTION */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 pt-10 pb-6 text-center">
@@ -80,6 +110,22 @@ export default async function HomePage({
           {textPrompts.map((p) => (
             <TextPromptCard key={p.slug} prompt={p} />
           ))}
+        </div>
+      </section>
+
+      {/* SEO SECTION */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 border-t border-[var(--border)]">
+        <h2 className="text-xl font-semibold mb-4">What is MangoXPrompts?</h2>
+        <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-6">
+          MangoXPrompts is a curated AI prompt library for creators, marketers, designers, founders, and AI users. Browse ready-to-copy prompts for Gemini image generation, AI portraits, video ideas, ChatGPT workflows, personal branding, and premium creative prompt collections.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/trending" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Trending</Link>
+          <Link href="/premium" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Premium</Link>
+          <Link href="/prompts/gemini-image-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Gemini Image Prompts</Link>
+          <Link href="/prompts/ai-portrait-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">AI Portrait Prompts</Link>
+          <Link href="/prompts/chatgpt-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">ChatGPT Prompts</Link>
+          <Link href="/prompts/veo-video-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Veo Video Prompts</Link>
         </div>
       </section>
     </div>
