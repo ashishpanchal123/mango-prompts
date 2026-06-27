@@ -66,7 +66,7 @@ export default async function PromptDetailPage({
 
   const related = getRelatedPrompts(prompt, 4);
   const url = `https://www.mangoxprompts.xyz/prompt/${slug}`;
-  const jsonLd = {
+  const jsonLd: any = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: prompt.title,
@@ -82,6 +82,17 @@ export default async function PromptDetailPage({
     url: url
   };
 
+  if (prompt.image) {
+    jsonLd.image = {
+      "@type": "ImageObject",
+      contentUrl: prompt.image,
+      name: prompt.title,
+      description: prompt.description || `A curated AI prompt for ${prompt.title}.`,
+      creator: { "@type": "Organization", name: "MangoXPrompts" },
+      license: "https://www.mangoxprompts.xyz/terms"
+    };
+  }
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12 lg:py-16">
       <script
@@ -94,7 +105,7 @@ export default async function PromptDetailPage({
           <div className="relative w-full aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden border border-[var(--border)] shadow-sm">
             <Image
               src={prompt.image}
-              alt={prompt.title}
+              alt={`${prompt.title} - AI prompt example by MangoXPrompts`}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

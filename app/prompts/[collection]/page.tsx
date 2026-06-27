@@ -5,7 +5,7 @@ import VisualPromptCard from "@/components/VisualPromptCard";
 import TextPromptCard from "@/components/TextPromptCard";
 import { getVisualPrompts, getTextPrompts } from "@/lib/prompts";
 
-const collectionsData: Record<string, { title: string; description: string; filterKey: string }> = {
+const collectionsData: Record<string, { title: string; description: string; filterKey: string; seoTitle?: string; keywords?: string[] }> = {
   "gemini-image-prompts": {
     title: "Gemini Image Prompts",
     description: "Explore curated Gemini image prompts for portraits, fashion visuals, cinematic edits, and creative image generation.",
@@ -13,7 +13,9 @@ const collectionsData: Record<string, { title: string; description: string; filt
   },
   "ai-portrait-prompts": {
     title: "AI Portrait Prompts",
-    description: "Discover stunning AI portrait prompts to generate hyper-realistic, cinematic, and professional portraits.",
+    seoTitle: "AI Portrait Prompts for Gemini Image Generation — MangoXPrompts",
+    description: "Explore curated AI portrait prompts for cinematic, realistic, professional, editorial, and personal branding portraits. Copy ready-to-use prompts from MangoXPrompts.",
+    keywords: ["AI portrait prompts", "Gemini portrait prompts", "AI image prompts", "realistic portrait prompt", "professional portrait prompt", "MangoXPrompts"],
     filterKey: "portrait"
   },
   "veo-video-prompts": {
@@ -50,14 +52,17 @@ export async function generateMetadata({ params }: { params: Promise<{ collectio
   if (!data) return { title: "Collection Not Found" };
 
   const url = `https://www.mangoxprompts.xyz/prompts/${collection}`;
+  const metadataTitle = (data as any).seoTitle || `${data.title} — MangoXPrompts`;
+  
   return {
-    title: `${data.title} — MangoXPrompts`,
+    title: metadataTitle,
     description: data.description,
+    keywords: (data as any).keywords,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${data.title} — MangoXPrompts`,
+      title: metadataTitle,
       description: data.description,
       url,
       type: "website",
@@ -83,6 +88,11 @@ export default async function CollectionPage({ params }: { params: Promise<{ col
     <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="font-logo text-4xl sm:text-5xl font-semibold leading-tight">{data.title}</h1>
+        {collection === "ai-portrait-prompts" && (
+          <p className="mt-6 text-sm text-[var(--text-secondary)] leading-relaxed">
+            AI Portrait Prompts by MangoXPrompts helps creators generate cinematic, realistic, and professional portrait visuals using Gemini and other AI image tools. Browse ready-to-copy portrait prompts for personal branding, studio portraits, editorial looks, cinematic lighting, and creative profile photos.
+          </p>
+        )}
         <p className="mt-4 text-lg text-[var(--text-secondary)] leading-relaxed">{data.description}</p>
       </div>
 

@@ -13,7 +13,7 @@ export default function VisualPromptCard({ prompt }: { prompt: Prompt }) {
           {prompt.image && (
             <Image
               src={prompt.image}
-              alt={prompt.title}
+              alt={`${prompt.title} - AI prompt example by MangoXPrompts`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               className="object-cover"
