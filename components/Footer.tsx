@@ -14,6 +14,7 @@ export default function Footer() {
           <Link href="/" className="hover:text-[var(--mango-soft)] transition-colors">Home</Link>
           <Link href="/premium" className="hover:text-[var(--mango-soft)] transition-colors">Premium</Link>
           <Link href="/about" className="hover:text-[var(--mango-soft)] transition-colors">About</Link>
+          <Link href="/founder" className="hover:text-[var(--mango-soft)] transition-colors">Founder</Link>
           <Link href="/contact" className="hover:text-[var(--mango-soft)] transition-colors">Contact</Link>
           <Link href="/privacy-policy" className="hover:text-[var(--mango-soft)] transition-colors">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-[var(--mango-soft)] transition-colors">Terms</Link>

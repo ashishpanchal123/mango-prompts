@@ -6,6 +6,12 @@ const SITE_URL = "https://www.mangoxprompts.xyz";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
+    { url: `${SITE_URL}/about`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/founder`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/contact`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/privacy-policy`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/terms`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/refund-policy`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/gallery`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/categories`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/trending`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },

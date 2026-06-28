@@ -31,8 +31,13 @@ export default async function HomePage({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "MangoXPrompts",
+            alternateName: "Mango X Prompts",
             url: "https://www.mangoxprompts.xyz",
-            description: "Curated AI prompt library for image, video, writing, and workflow prompts.",
+            description: "Curated AI prompt library for image, video, writing, and creative workflows.",
+            publisher: {
+              "@type": "Organization",
+              name: "MangoXPrompts"
+            },
             potentialAction: {
               "@type": "SearchAction",
               target: "https://www.mangoxprompts.xyz/?q={search_term_string}",
@@ -48,8 +53,18 @@ export default async function HomePage({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "MangoXPrompts",
+            alternateName: "Mango X Prompts",
             url: "https://www.mangoxprompts.xyz",
             logo: "https://www.mangoxprompts.xyz/images/logo.png",
+            foundingDate: "2026-06-25",
+            slogan: "Sharing the prompts that actually work.",
+            description: "MangoXPrompts is a curated AI prompt library for Gemini image generation, AI portraits, video ideas, ChatGPT workflows, personal branding, luxury fashion visuals, and premium creative prompt collections.",
+            founder: {
+              "@type": "Person",
+              name: "Ashish Panchal",
+              url: "https://www.mangoxprompts.xyz/founder",
+              image: "https://www.mangoxprompts.xyz/images/founder/ashish-panchal-founder.jpg"
+            },
             sameAs: []
           }),
         }}
@@ -117,15 +132,17 @@ export default async function HomePage({
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 border-t border-[var(--border)]">
         <h2 className="text-xl font-semibold mb-4">What is MangoXPrompts?</h2>
         <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-6">
-          MangoXPrompts is a curated AI prompt library for creators, marketers, designers, founders, and AI users. Browse ready-to-copy prompts for Gemini image generation, AI portraits, video ideas, ChatGPT workflows, personal branding, and premium creative prompt collections.
+          MangoXPrompts is a curated AI prompt library founded by Ashish Panchal on 25 June 2026. Built around the idea “Sharing the prompts that actually work,” MangoXPrompts helps creators, marketers, founders, designers, and AI users discover ready-to-copy prompts for Gemini image generation, AI portraits, video ideas, ChatGPT workflows, personal branding, luxury fashion visuals, and premium creative prompt collections.
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/trending" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Trending</Link>
-          <Link href="/premium" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Premium</Link>
-          <Link href="/prompts/gemini-image-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Gemini Image Prompts</Link>
-          <Link href="/prompts/ai-portrait-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">AI Portrait Prompts</Link>
-          <Link href="/prompts/chatgpt-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">ChatGPT Prompts</Link>
-          <Link href="/prompts/veo-video-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Veo Video Prompts</Link>
+          <a href="/about" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">About</a>
+          <a href="/founder" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Founder</a>
+          <a href="/trending" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Trending</a>
+          <a href="/premium" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Premium</a>
+          <a href="/prompts/gemini-image-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Gemini Image Prompts</a>
+          <a href="/prompts/ai-portrait-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">AI Portrait Prompts</a>
+          <a href="/prompts/chatgpt-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">ChatGPT Prompts</a>
+          <a href="/prompts/veo-video-prompts" className="text-xs px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:text-white transition-colors">Veo Video Prompts</a>
         </div>
       </section>
     </div>
